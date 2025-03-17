@@ -1,0 +1,15 @@
+*.obj
+*.pdb
+*.exe
+*.suo
+*.db
+*.opendb
+*.shm
+*.ipch
+*.recipe
+*.iobj
+*.log
+*.wal
+*.vsidx
+*.tlog
+.vs/CS2-External-Base C++/v17/
