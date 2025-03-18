@@ -72,6 +72,12 @@
     <ClInclude Include="EntityList\EntityList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Draw\Draw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheats\PlayerEsp\PlayerEsp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Entry\Source.cpp">
@@ -111,6 +117,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="EntityList\EntityList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw\Draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheats\PlayerEsp\PlayerEsp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

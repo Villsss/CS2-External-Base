@@ -24,6 +24,28 @@
 #include <string>
 #include <winternl.h>
 #include <numbers>
+#include <math.h>
+#include <algorithm>
+#include <xstring>
+#include <functional>
+#include <mutex>
+#include <shared_mutex>
+#include <any>
+#include <array>
+#include <format>
+#include <fstream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <conio.h>
+#include <cmath>
+#include <limits>
+#include <map>
+#include <filesystem>
+#include <shlobj_core.h>
+#include <KnownFolders.h>
+#include <Psapi.h>
+#include <DirectXMath.h>
 
 // imgui
 #include "External/ImGui/imgui.h"
@@ -87,6 +109,12 @@ inline void allocateConsole() {
 
 // entity list 
 #include "EntityList/EntityList.h"
+
+// draw
+#include "Draw/Draw.h"
+
+// cheats
+#include "Cheats/PlayerEsp/PlayerEsp.h"
 
 // globals 
 namespace Globals

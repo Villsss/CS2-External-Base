@@ -102,8 +102,14 @@ void overlay::renderLoop()
 	memory.clientDLL = memory.GetModuleAddress("client.dll");
 	memory.engineDLL = memory.GetModuleAddress("engine2.dll");
 
+	// entity list
 	std::thread([]() {
 		List.StartEntityLoop();
+		}).detach();
+
+	// cheat threads
+	std::thread([]() {
+		PlayerEsp::RunPlayerEsp();
 		}).detach();
 
 	while (state) {
@@ -130,7 +136,7 @@ void overlay::renderLoop()
 			exit(0);
 		}
 
-		std::this_thread::sleep_for(std::chrono::milliseconds(1));
+		std::this_thread::sleep_for(std::chrono::nanoseconds(1));
 
 		ImGui_ImplDX11_NewFrame();
 		ImGui_ImplWin32_NewFrame();
