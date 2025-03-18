@@ -12,6 +12,8 @@ namespace Offsets
 	inline std::ptrdiff_t dwLocalPlayerController = offsets::client_dll::dwLocalPlayerController;
 	inline std::ptrdiff_t dwLocalPlayerPawn = offsets::client_dll::dwLocalPlayerPawn;
 	inline std::ptrdiff_t dwViewMatrix = offsets::client_dll::dwViewMatrix;
+	inline std::ptrdiff_t dwGameEntitySystem = offsets::client_dll::dwGameEntitySystem;
+	inline std::ptrdiff_t dwGameEntitySystem_highestEntityIndex = offsets::client_dll::dwGameEntitySystem_highestEntityIndex;
 
 	namespace client 
 	{

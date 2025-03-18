@@ -102,6 +102,10 @@ void overlay::renderLoop()
 	memory.clientDLL = memory.GetModuleAddress("client.dll");
 	memory.engineDLL = memory.GetModuleAddress("engine2.dll");
 
+	std::thread([]() {
+		List.StartEntityLoop();
+		}).detach();
+
 	while (state) {
 		if (GetAsyncKeyState(VK_INSERT) & 1) {
 			menutoggle = !menutoggle;
@@ -126,7 +130,7 @@ void overlay::renderLoop()
 			exit(0);
 		}
 
-		std::this_thread::sleep_for(std::chrono::nanoseconds(1));
+		std::this_thread::sleep_for(std::chrono::milliseconds(1));
 
 		ImGui_ImplDX11_NewFrame();
 		ImGui_ImplWin32_NewFrame();

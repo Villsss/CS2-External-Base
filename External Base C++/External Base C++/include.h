@@ -85,8 +85,13 @@ inline void allocateConsole() {
 // cheat entry
 #include "Cheats/Entry.h"
 
+// entity list 
+#include "EntityList/EntityList.h"
+
 // globals 
 namespace Globals
 {
 	inline ImFont* ESPFont;
+
+	inline int LocalPlayerIndex;
 }

@@ -133,6 +133,7 @@
   <ItemGroup>
     <ClInclude Include="Cheats\Entry.h" />
     <ClInclude Include="Config\Config.hpp" />
+    <ClInclude Include="EntityList\EntityList.h" />
     <ClInclude Include="External\ImGui\imconfig.h" />
     <ClInclude Include="External\ImGui\imgui.h" />
     <ClInclude Include="External\ImGui\imgui_impl_dx11.h" />
@@ -152,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Cheats\Entry.cpp" />
+    <ClCompile Include="EntityList\EntityList.cpp" />
     <ClCompile Include="Entry\Source.cpp" />
     <ClCompile Include="External\ImGui\imgui.cpp" />
     <ClCompile Include="External\ImGui\imgui_demo.cpp" />
