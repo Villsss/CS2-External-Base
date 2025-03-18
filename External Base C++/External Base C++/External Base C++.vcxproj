@@ -131,6 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Cheats\Bone.hpp" />
     <ClInclude Include="Cheats\Entry.h" />
     <ClInclude Include="Cheats\PlayerEsp\PlayerEsp.h" />
     <ClInclude Include="Config\Config.hpp" />

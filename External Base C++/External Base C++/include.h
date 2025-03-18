@@ -101,6 +101,9 @@ inline void allocateConsole() {
 	}
 }
 
+// bone data
+#include "Cheats/Bone.hpp"
+
 // Offsets
 #include "Offsets/UsedOffsets.hpp"
 

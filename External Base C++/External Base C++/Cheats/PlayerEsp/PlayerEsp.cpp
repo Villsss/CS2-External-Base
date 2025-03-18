@@ -67,8 +67,6 @@ void PlayerEsp::EachPlayer(std::vector<DrawObject_t>* vecDrawData, uintptr_t paw
 
 	ImVec4 Box = CalcBox(sHeadPos.x, sHeadPos.y, sPawnPos.x, sPawnPos.y);
 
-	ImDrawList* drawList = ImGui::GetBackgroundDrawList();
-
 	if (Config::boxToggle)
 		Draw::AddRect(vecDrawData, { Box.x, Box.y }, { Box.x + Box.z,Box.y + Box.w }, ImColor(255, 0, 0), DRAW_RECT_OUTLINE | DRAW_RECT_BORDER | DRAW_RECT_ALIGNED, ImColor(0,0,0,0));
 
@@ -90,6 +88,21 @@ void PlayerEsp::EachPlayer(std::vector<DrawObject_t>* vecDrawData, uintptr_t paw
 		if (pawnHealth < 100) {
 			ImVec2 size = ImGui::CalcTextSize(health.c_str());
 			Draw::AddText(vecDrawData, Globals::ESPFont, 9, { Box.x - (size.x / 2) - 8, Box.y - healthBarYOffset + Box.w - 0.7f }, health, ImColor(red, green, 0.f, 1.f), DRAW_TEXT_OUTLINE);
+		}
+	}
+
+	if (Config::boneEspToggle) {
+		for (int i = 0; i < sizeof(boneConnections) / sizeof(boneConnections[0]); i++) {
+			int bone1 = boneConnections[i].bone1;
+			int bone2 = boneConnections[i].bone2;
+
+			Vec3 bonePos1 = memory.Read<Vec3>(bonearray + bone1 * 32);
+			Vec3 bonePos2 = memory.Read<Vec3>(bonearray + bone2 * 32);
+
+			Vec3 sBone1 = bonePos1.worldToScreen(matrix); if (sBone1.z < 0.1f) continue;
+			Vec3 sBone2 = bonePos2.worldToScreen(matrix); if (sBone2.z < 0.1f) continue;
+
+			Draw::AddLine(vecDrawData, { sBone1.x, sBone1.y }, { sBone2.x, sBone2.y }, ImColor(255, 255, 255, 160));
 		}
 	}
 }

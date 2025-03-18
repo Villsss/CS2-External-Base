@@ -78,6 +78,9 @@
     <ClInclude Include="Cheats\PlayerEsp\PlayerEsp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Cheats\Bone.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Entry\Source.cpp">
