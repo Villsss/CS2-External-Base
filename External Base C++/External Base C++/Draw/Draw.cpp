@@ -2,9 +2,16 @@
 
 #define M_DEG2RAD( x )		DirectX::XMConvertToRadians( x )
 
+std::vector<DrawObject_t> drawDataTemp;
+
 void Draw::RenderDrawData(ImDrawList* pDrawList)
 {
-	std::vector<DrawObject_t> drawDataTemp = playerEspData;
+	{
+		std::unique_lock<std::shared_mutex> lock(Draw::drawMutex);
+		drawDataTemp.clear();
+		drawDataTemp.reserve(1024);
+		drawDataTemp = playerEspData;
+	}
 
 	for (const auto& data : drawDataTemp)
 	{
