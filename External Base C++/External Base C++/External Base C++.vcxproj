@@ -131,10 +131,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Cheats\Aimbot\Aimbot.h" />
     <ClInclude Include="Cheats\Bone.hpp" />
     <ClInclude Include="Cheats\Entry.h" />
     <ClInclude Include="Cheats\PlayerEsp\PlayerEsp.h" />
     <ClInclude Include="Config\Config.hpp" />
+    <ClInclude Include="Config\HotKey.hpp" />
     <ClInclude Include="Draw\Draw.h" />
     <ClInclude Include="EntityList\EntityList.h" />
     <ClInclude Include="External\ImGui\imconfig.h" />
@@ -155,6 +157,7 @@
     <ClInclude Include="Vector\Vector.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Cheats\Aimbot\Aimbot.cpp" />
     <ClCompile Include="Cheats\Entry.cpp" />
     <ClCompile Include="Cheats\PlayerEsp\PlayerEsp.cpp" />
     <ClCompile Include="Draw\Draw.cpp" />

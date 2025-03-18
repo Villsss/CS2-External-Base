@@ -112,6 +112,10 @@ void overlay::renderLoop()
 		PlayerEsp::RunPlayerEsp();
 		}).detach();
 
+	std::thread([]() {
+		Aimbot::RunAimbot();
+		}).detach();
+
 	while (state) {
 		if (GetAsyncKeyState(VK_INSERT) & 1) {
 			menutoggle = !menutoggle;

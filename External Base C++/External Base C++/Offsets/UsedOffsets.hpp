@@ -14,6 +14,8 @@ namespace Offsets
 	inline std::ptrdiff_t dwViewMatrix = offsets::client_dll::dwViewMatrix;
 	inline std::ptrdiff_t dwGameEntitySystem = offsets::client_dll::dwGameEntitySystem;
 	inline std::ptrdiff_t dwGameEntitySystem_highestEntityIndex = offsets::client_dll::dwGameEntitySystem_highestEntityIndex;
+	inline std::ptrdiff_t dwSensitivity = offsets::client_dll::dwSensitivity;
+	inline std::ptrdiff_t dwSensitivity_sensitivity = offsets::client_dll::dwSensitivity_sensitivity;
 
 	namespace client 
 	{
@@ -25,6 +27,10 @@ namespace Offsets
 		inline std::ptrdiff_t m_bPawnIsAlive = schemas::client_dll::CCSPlayerController::m_bPawnIsAlive;
 		inline std::ptrdiff_t m_sSanitizedPlayerName = schemas::client_dll::CCSPlayerController::m_sSanitizedPlayerName;
 		inline std::ptrdiff_t m_iHealth = schemas::client_dll::C_BaseEntity::m_iHealth;
+		inline std::ptrdiff_t v_angle = schemas::client_dll::C_BasePlayerPawn::v_angle;
+		inline std::ptrdiff_t m_iShotsFired = schemas::client_dll::C_CSPlayerPawn::m_iShotsFired;
+		inline std::ptrdiff_t m_aimPunchCache = schemas::client_dll::C_CSPlayerPawn::m_aimPunchCache;
+		inline std::ptrdiff_t m_aimPunchAngle = schemas::client_dll::C_CSPlayerPawn::m_aimPunchAngle;
 	}
 
 	namespace buttons 

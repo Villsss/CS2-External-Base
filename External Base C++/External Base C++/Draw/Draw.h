@@ -179,7 +179,7 @@ struct ArcObject_t
 //@Credits: Qo0 ( https://github.com/rollraw/qo0-csgo/blob/v1/base/utilities/draw.h )
 namespace Draw
 {
-	void RenderDrawData(ImDrawList* pDrawList);
+	void RenderDrawData(ImDrawList* pDrawList, std::vector<DrawObject_t> passeddata);
 
 	void AddLine(std::vector<DrawObject_t>* vecDrawData, const ImVec2& vecStart, const ImVec2& vecEnd, const ImColor& colLine, float flThickness = 1.0f);
 	void AddRect(std::vector<DrawObject_t>* vecDrawData, const ImVec2& vecMin, const ImVec2& vecMax, const ImColor& colRect, unsigned int uFlags = DRAW_RECT_NONE, const ImColor& colOutline = ImColor(0, 0, 0, 255), float flRounding = 0.f, float flThickness = 1.0f);
@@ -198,7 +198,9 @@ namespace Draw
 
 	inline bool	bInitialized = false;
 
-	inline std::shared_mutex drawMutex = { };
+	inline std::shared_mutex PlayerEspMutex = { };
+	inline std::shared_mutex AimbotMutex = { };
 
 	inline std::vector<DrawObject_t> playerEspData;
+	inline std::vector<DrawObject_t> aimbotData;
 }

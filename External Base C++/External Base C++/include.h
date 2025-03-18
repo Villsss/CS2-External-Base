@@ -65,6 +65,9 @@
 // Config
 #include "Config/Config.hpp"
 
+// HotKeys
+#include "Config/HotKey.hpp"
+
 // wndProc
 inline LRESULT Wndproc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) {
 	if (ImGui_ImplWin32_WndProcHandler(hWnd, msg, wParam, lParam)) {
@@ -118,6 +121,7 @@ inline void allocateConsole() {
 
 // cheats
 #include "Cheats/PlayerEsp/PlayerEsp.h"
+#include "Cheats/Aimbot/Aimbot.h"
 
 // globals 
 namespace Globals
@@ -125,4 +129,6 @@ namespace Globals
 	inline ImFont* ESPFont;
 
 	inline int LocalPlayerIndex;
+
+	inline float m_fSensitivity;
 }

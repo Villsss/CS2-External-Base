@@ -6,4 +6,16 @@ namespace Config
 	inline bool nameToggle = true;
 	inline bool healthBarToggle = true;
 	inline bool boneEspToggle = true;
+
+	inline bool aimToggle = true;
+	inline bool aimWithKeyToggle = true;
+	inline float smoothing = 5.f;
+	inline int aimKey = VK_LBUTTON;
+
+	inline bool rcsToggle = true;
+	inline float rcsX, rcsY;
+
+	inline bool fovtoggle = true;
+	inline bool movingFov = true;
+	inline float fov = 50;
 }

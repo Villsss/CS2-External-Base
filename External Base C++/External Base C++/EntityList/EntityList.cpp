@@ -62,5 +62,7 @@ void EntityList::ReadEntityList()
 		}
 	}
 
+	Globals::m_fSensitivity = memory.Read<float>(memory.Read<uintptr_t>(client + Offsets::dwSensitivity) + Offsets::dwSensitivity_sensitivity);
+
 	playerList.swap(playerListTemp);
 }

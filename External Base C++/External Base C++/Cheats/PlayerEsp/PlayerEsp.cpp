@@ -35,7 +35,7 @@ void PlayerEsp::RunPlayerEsp()
 		}
 
 		{
-			std::unique_lock<std::shared_mutex> lock(Draw::drawMutex);
+			std::unique_lock<std::shared_mutex> lock(Draw::PlayerEspMutex);
 			Draw::playerEspData.swap(vecDrawDataTemp);
 		}
 	}

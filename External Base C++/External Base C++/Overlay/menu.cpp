@@ -26,7 +26,19 @@ void __fastcall overlay::renderMenu()
         {
             if (ImGui::BeginTabItem("Aimbot"))
             {
-                ImGui::Text("Aimbot settings go here.");
+                ImGui::Checkbox("Aim Toggle", &Config::aimToggle);
+                ImGui::Checkbox("Aim With Key", &Config::aimWithKeyToggle);
+                ImGui::SliderFloat("Aim Smoothing", &Config::smoothing, 1, 50);
+                HotKey::HotkeySelector("Aim Key", Config::aimKey);
+
+                ImGui::Text("Rcs Stuff");
+                ImGui::Checkbox("Rcs Toggle", &Config::rcsToggle);
+                ImGui::SliderFloat("Rcs Scale X", &Config::rcsX, 0, 1);
+                ImGui::SliderFloat("Rcs Scale Y", &Config::rcsY, 0, 1);
+
+                ImGui::Checkbox("Fov Toggle", &Config::fovtoggle);
+                ImGui::Checkbox("Fov Follow Recoil", &Config::movingFov);
+                ImGui::SliderFloat("Aim Fov", &Config::fov, 0, 100);
 
                 ImGui::EndTabItem();
             }
