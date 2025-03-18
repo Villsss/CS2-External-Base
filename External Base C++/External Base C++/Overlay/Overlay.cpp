@@ -81,7 +81,8 @@ void overlay::initWindow(int nShowCmd) {
 	ImGuiIO& io = ImGui::GetIO();
 	io.Fonts->AddFontDefault();
 
-	ImFont* arialFont = io.Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\msyhbd.ttc", 24.f);
+	ImFont* arialFont = io.Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\msyhbd.ttc", 14.f);
+	Globals::ESPFont = arialFont;
 
 	ImGui::StyleColorsDark();
 

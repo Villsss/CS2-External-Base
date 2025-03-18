@@ -20,5 +20,13 @@ namespace Offsets
 		inline std::ptrdiff_t m_vecViewOffset = schemas::client_dll::C_BaseModelEntity::m_vecViewOffset;
 		inline std::ptrdiff_t m_modelState = schemas::client_dll::CSkeletonInstance::m_modelState;
 		inline std::ptrdiff_t m_pGameSceneNode = schemas::client_dll::C_BaseEntity::m_pGameSceneNode;
+		inline std::ptrdiff_t m_bPawnIsAlive = schemas::client_dll::CCSPlayerController::m_bPawnIsAlive;
+		inline std::ptrdiff_t m_sSanitizedPlayerName = schemas::client_dll::CCSPlayerController::m_sSanitizedPlayerName;
+		inline std::ptrdiff_t m_iHealth = schemas::client_dll::C_BaseEntity::m_iHealth;
+	}
+
+	namespace buttons 
+	{
+		inline std::ptrdiff_t jump = cs2_dumper::buttons::jump;
 	}
 }

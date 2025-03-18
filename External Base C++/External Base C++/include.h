@@ -84,3 +84,9 @@ inline void allocateConsole() {
 
 // cheat entry
 #include "Cheats/Entry.h"
+
+// globals 
+namespace Globals
+{
+	inline ImFont* ESPFont;
+}

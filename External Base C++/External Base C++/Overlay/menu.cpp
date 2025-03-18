@@ -34,6 +34,8 @@ void __fastcall overlay::renderMenu()
             if (ImGui::BeginTabItem("Players"))
             {
                 ImGui::Checkbox("Box Esp toggle", &Config::boxToggle);
+                ImGui::Checkbox("Name Esp toggle", &Config::nameToggle);
+                ImGui::Checkbox("Health Bar toggle", &Config::healthBarToggle);
 
                 ImGui::EndTabItem();
             }
