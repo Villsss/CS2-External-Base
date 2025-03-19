@@ -17,4 +17,11 @@ void __fastcall Run::Cheats()
 		aimbotDataTemp = Draw::aimbotData;
 	}
 	Draw::RenderDrawData(ImGui::GetBackgroundDrawList(), aimbotDataTemp);
+
+	std::vector<DrawObject_t> itemDataTemp;
+	{
+		std::unique_lock<std::shared_mutex> lock(Draw::ItemMutex);
+		itemDataTemp = Draw::ItemData;
+	}
+	Draw::RenderDrawData(ImGui::GetBackgroundDrawList(), itemDataTemp);
 }

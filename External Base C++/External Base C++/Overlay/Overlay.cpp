@@ -84,6 +84,9 @@ void overlay::initWindow(int nShowCmd) {
 	ImFont* arialFont = io.Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\msyhbd.ttc", 14.f);
 	Globals::ESPFont = arialFont;
 
+	ImFont* weapon = io.Fonts->AddFontFromFileTTF("C:\\djindjan\\weaponIcons.ttf", 24.f);
+	Globals::WEAPONFont = weapon;
+
 	ImGui::StyleColorsDark();
 
 	ImGui_ImplWin32_Init(window);
@@ -114,6 +117,10 @@ void overlay::renderLoop()
 
 	std::thread([]() {
 		Aimbot::RunAimbot();
+		}).detach();
+
+	std::thread([]() {
+		ItemEsp::RunItemEsp();
 		}).detach();
 
 	while (state) {

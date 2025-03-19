@@ -29,7 +29,7 @@ void EntityList::ReadEntityList()
 
 	for (int i = highIx; i >= 1; i--)
 	{
-		if (i <= 64) {
+		if (i < 64) {
 			uintptr_t listEntry1 = memory.Read<uintptr_t>(entityList + (8 * (i & 0x7FFF) >> 9) + 16);
 			if (!listEntry1) continue;
 
@@ -60,9 +60,74 @@ void EntityList::ReadEntityList()
 			player.playerIndex = i;
 			playerListTemp.emplace_back(std::move(player));
 		}
+        else {
+            uintptr_t listEntry = memory.Read<uintptr_t>(entityList + 0x8 * ((i & 0x7FFF) >> 9) + 0x10);
+            if (!listEntry) continue;
+
+            uintptr_t grenadeHandle = memory.Read<uintptr_t>(listEntry + 0x78 * (i & 0x1FF));
+            if (!grenadeHandle) continue;
+
+            uintptr_t entity = memory.Read<uintptr_t>(grenadeHandle + 0x10);
+            if (!entity) continue;
+
+            uintptr_t designerNameAddy = memory.Read<uintptr_t>(entity + 0x20);
+            if (!designerNameAddy) continue;
+
+            int owner = memory.Read<int>(grenadeHandle + Offsets::client::m_hOwnerEntity);
+
+            char designerNameBuffer[MAX_PATH]{};
+            memory.ReadRaw(designerNameAddy, designerNameBuffer, MAX_PATH);
+            std::string name = std::string(designerNameBuffer);
+
+            uintptr_t gameSceneNode = memory.Read<uintptr_t>(grenadeHandle + Offsets::client::m_pGameSceneNode);
+            Vec3 origin = memory.Read<Vec3>(gameSceneNode + Offsets::client::m_vecAbsOrigin);
+
+            if (owner != -1)
+            {
+                if (strstr(name.c_str(), "_projectile")) {
+                    size_t pos = name.find("_projectile");
+                    if (pos != std::string::npos) {
+                        name.erase(pos, std::string("_projectile").length());
+                    }
+                }
+                else continue;
+
+                desiredOtherValues other;
+                other.handle = grenadeHandle;
+                other.otherName = name;
+                other.ownerID = owner;
+
+                otherListTemp.emplace_back(std::move(other));
+            }
+            else
+            {
+                if (name.find("weapon_") != std::string::npos) {
+                    name.erase(name.find("weapon_"), std::string("weapon_").length());
+                }
+                else if (name.find("_projectile") != std::string::npos) {
+                    name.erase(name.find("_projectile"), std::string("_projectile").length());
+                }
+                else if (name.find("baseanimgraph") != std::string::npos) {
+                    name = "kit";
+                }
+                else
+                    continue;
+
+                if (name == "hkp2000")
+                    name = "p2000";
+
+                desiredOtherValues other;
+                other.handle = grenadeHandle;
+                other.otherName = name;
+                other.ownerID = owner;
+
+                otherListTemp.emplace_back(std::move(other));
+            }
+        }
 	}
 
 	Globals::m_fSensitivity = memory.Read<float>(memory.Read<uintptr_t>(client + Offsets::dwSensitivity) + Offsets::dwSensitivity_sensitivity);
 
-	playerList.swap(playerListTemp);
+	playerList = std::move(playerListTemp);
+    otherList = std::move(otherListTemp);
 }

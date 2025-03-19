@@ -107,6 +107,9 @@ inline void allocateConsole() {
 // bone data
 #include "Cheats/Bone.hpp"
 
+// weapon data
+#include "Cheats/Weapon.hpp"
+
 // Offsets
 #include "Offsets/UsedOffsets.hpp"
 
@@ -122,11 +125,13 @@ inline void allocateConsole() {
 // cheats
 #include "Cheats/PlayerEsp/PlayerEsp.h"
 #include "Cheats/Aimbot/Aimbot.h"
+#include "Cheats/ItemEsp/ItemEsp.h"
 
 // globals 
 namespace Globals
 {
 	inline ImFont* ESPFont;
+	inline ImFont* WEAPONFont;
 
 	inline int LocalPlayerIndex;
 

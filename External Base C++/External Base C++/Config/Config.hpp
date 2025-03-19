@@ -6,6 +6,7 @@ namespace Config
 	inline bool nameToggle = true;
 	inline bool healthBarToggle = true;
 	inline bool boneEspToggle = true;
+	inline bool espTeamCheck = true;
 
 	inline bool aimToggle = true;
 	inline bool aimWithKeyToggle = true;
@@ -18,4 +19,5 @@ namespace Config
 	inline bool fovtoggle = true;
 	inline bool movingFov = true;
 	inline float fov = 50;
+	inline bool aimTeamCheck = true;
 }

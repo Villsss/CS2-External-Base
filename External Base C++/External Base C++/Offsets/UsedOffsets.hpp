@@ -19,7 +19,7 @@ namespace Offsets
 
 	namespace client 
 	{
-		inline std::ptrdiff_t m_hPawn = schemas::client_dll::CBasePlayerController::m_hPawn;
+		inline std::ptrdiff_t m_hPawn = schemas::client_dll::CCSPlayerController::m_hPlayerPawn;
 		inline std::ptrdiff_t m_vOldOrigin = schemas::client_dll::C_BasePlayerPawn::m_vOldOrigin;
 		inline std::ptrdiff_t m_vecViewOffset = schemas::client_dll::C_BaseModelEntity::m_vecViewOffset;
 		inline std::ptrdiff_t m_modelState = schemas::client_dll::CSkeletonInstance::m_modelState;
@@ -31,6 +31,12 @@ namespace Offsets
 		inline std::ptrdiff_t m_iShotsFired = schemas::client_dll::C_CSPlayerPawn::m_iShotsFired;
 		inline std::ptrdiff_t m_aimPunchCache = schemas::client_dll::C_CSPlayerPawn::m_aimPunchCache;
 		inline std::ptrdiff_t m_aimPunchAngle = schemas::client_dll::C_CSPlayerPawn::m_aimPunchAngle;
+		inline std::ptrdiff_t m_pClippingWeapon = schemas::client_dll::C_CSPlayerPawnBase::m_pClippingWeapon;
+		inline std::ptrdiff_t m_nSubclassID = schemas::client_dll::C_BaseEntity::m_nSubclassID + 0x8;
+		inline std::ptrdiff_t m_bIsFullAuto = schemas::client_dll::CCSWeaponBaseVData::m_bIsFullAuto;
+		inline std::ptrdiff_t m_iTeamNum = schemas::client_dll::C_BaseEntity::m_iTeamNum;
+		inline std::ptrdiff_t m_vecAbsOrigin = schemas::client_dll::CGameSceneNode::m_vecAbsOrigin;
+		inline std::ptrdiff_t m_hOwnerEntity = schemas::client_dll::C_BaseEntity::m_hOwnerEntity;
 	}
 
 	namespace buttons 

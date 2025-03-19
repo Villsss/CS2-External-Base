@@ -2,12 +2,12 @@
 
 #define M_PI       3.14159265358979323846 
 
-void Aimbot::RunRcs(uintptr_t localPawn) 
+void Aimbot::RunRcs(uintptr_t localPawn, bool m_bIsFullAuto)
 {
 	static Vec3 oldPunch{ 0,0,0 };
 	static Vec3 currentPunch{ 0,0,0 };
 
-	if (memory.Read<int>(localPawn + Offsets::client::m_iShotsFired))
+	if (memory.Read<int>(localPawn + Offsets::client::m_iShotsFired) && m_bIsFullAuto)
 	{
 		Vec3 viewAngles = memory.Read<Vec3>(localPawn + Offsets::client::v_angle);
 		Vec3 aimPunchAngle = memory.Read<Vec3>(localPawn + Offsets::client::m_aimPunchAngle);
@@ -16,7 +16,7 @@ void Aimbot::RunRcs(uintptr_t localPawn)
 		deltaPunch.x = (aimPunchAngle.x * 2.0f) - oldPunch.x;
 		deltaPunch.y = (aimPunchAngle.y * 2.0f) - oldPunch.y;
 
-		float smoothingFactor = 0.3f;
+		float smoothingFactor = 0.6f;
 
 		currentPunch.x += smoothingFactor * (deltaPunch.x - currentPunch.x);
 		currentPunch.y += smoothingFactor * (deltaPunch.y - currentPunch.y);
@@ -77,8 +77,6 @@ void Aimbot::RunAimbot()
 
 		view_matrix_t viewMatrix = memory.Read<view_matrix_t>(client + Offsets::dwViewMatrix);
 
-		RunRcs(localPlayerPawn);
-
 		if (!Config::aimToggle) continue;
 
 		Target ClosestTarget = GetBestTarget(viewMatrix);
@@ -107,8 +105,11 @@ void Aimbot::RunAimbot()
 			rcsFov.y = rcsFov.y + punch.y * 2.f;
 		}
 
+		bool m_bIsFullAuto = memory.Read<bool>(memory.Read<uintptr_t>(memory.Read<uintptr_t>(localPlayerPawn + Offsets::client::m_pClippingWeapon) + Offsets::client::m_nSubclassID) + Offsets::client::m_bIsFullAuto);
+		RunRcs(localPlayerPawn, m_bIsFullAuto);
+
 		Vec3 EndPos;
-		float LineLength = cos(rcsFov.x * M_PI / 180) * 20000;//
+		float LineLength = cos(rcsFov.x * M_PI / 180) * 20000;
 		EndPos.x = localOrigin.x + cos(rcsFov.y * M_PI / 180) * LineLength;
 		EndPos.y = localOrigin.y + sin(rcsFov.y * M_PI / 180) * LineLength;
 		EndPos.z = localOrigin.z - sin(rcsFov.x * M_PI / 180) * 20000;
@@ -117,10 +118,10 @@ void Aimbot::RunAimbot()
 		ImVec2 criclePos = { temp.x, temp.y };
 
 		if (Config::fovtoggle) {
-			if (memory.Read<int>(localPlayerPawn + Offsets::client::m_iShotsFired) && Config::movingFov)
-				Draw::AddCircle(&vecDrawDataTemp, criclePos, Config::fov, ImColor(0, 0, 0, 255), 256);
+			if (memory.Read<int>(localPlayerPawn + Offsets::client::m_iShotsFired) && Config::movingFov && m_bIsFullAuto)
+				Draw::AddCircle(&vecDrawDataTemp, criclePos, Config::fov, ImColor(0, 0, 0, 255), 0);
 			else
-				Draw::AddCircle(&vecDrawDataTemp, { ScreenSizeX / 2, ScreenSizeY / 2 }, Config::fov, ImColor(0, 0, 0, 255), 256);
+				Draw::AddCircle(&vecDrawDataTemp, { ScreenSizeX / 2, ScreenSizeY / 2 }, Config::fov, ImColor(0, 0, 0, 255), 0);
 		}
 
 		{
@@ -128,7 +129,7 @@ void Aimbot::RunAimbot()
 			Draw::aimbotData.swap(vecDrawDataTemp);
 		}
 
-		if (memory.Read<int>(localPlayerPawn + Offsets::client::m_iShotsFired))
+		if (memory.Read<int>(localPlayerPawn + Offsets::client::m_iShotsFired) && m_bIsFullAuto)
 		{
 			Vec3 Angle = CalculateAngle(LocalEyePos, DesiredAimPos, LocalAngles);
 			Angle.x = Angle.x - (aimPunchAngle.x * 2.f);
@@ -269,10 +270,17 @@ Aimbot::Target Aimbot::GetBestTarget(view_matrix_t matrix)
 {
 	std::vector<desiredPlayerValues> playerListTemp = List.playerList;
 	std::vector<Target> targets;
+
+	const auto& localPlayerController = memory.Read<uintptr_t>(memory.clientDLL + Offsets::dwLocalPlayerController);
+	if (!localPlayerController) return Target(0, 0);
+
 	for (auto& player : playerListTemp)
 	{
 		if (player.playerIndex == Globals::LocalPlayerIndex) continue;
 		if (!memory.Read<bool>(player.playerController + Offsets::client::m_bPawnIsAlive)) continue;
+
+		if (memory.Read<int>(localPlayerController + Offsets::client::m_iTeamNum) == memory.Read<int>(player.playerController + Offsets::client::m_iTeamNum) && !Config::aimTeamCheck)
+			continue;
 
 		uintptr_t node = memory.Read<uintptr_t>(player.playerPawn + Offsets::client::m_pGameSceneNode);
 		uintptr_t bonearray = memory.Read<uintptr_t>(node + Offsets::client::m_modelState + 0x80);

@@ -11,6 +11,7 @@ public:
 
 class desiredOtherValues
 {
+public:
 	uintptr_t handle;
 	std::string otherName;
 	int ownerID;

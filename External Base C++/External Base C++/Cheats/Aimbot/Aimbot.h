@@ -13,5 +13,5 @@ namespace Aimbot
 	Vec3 CalcBestAngle(Vec3 angle, float configFov);
 	void MoveMouse(Vec3 newAngle);
 	void MoveUsingAngle(Vec3 newAngle);
-	void RunRcs(uintptr_t localPawn);
+	void RunRcs(uintptr_t localPawn, bool m_bIsFullAuto);
 }

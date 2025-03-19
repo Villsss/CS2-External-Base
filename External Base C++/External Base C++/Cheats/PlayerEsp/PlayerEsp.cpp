@@ -27,6 +27,9 @@ void PlayerEsp::RunPlayerEsp()
 			if (player.playerIndex == Globals::LocalPlayerIndex) continue;
 			if (!memory.Read<bool>(player.playerController + Offsets::client::m_bPawnIsAlive)) continue;
 
+			if (memory.Read<int>(localPlayerController + Offsets::client::m_iTeamNum) == memory.Read<int>(player.playerController + Offsets::client::m_iTeamNum) && !Config::espTeamCheck)
+				continue;
+
 			playerThreads.push_back(std::thread(EachPlayer, &vecDrawDataTemp, player.playerPawn, player.playerController, player.playerIndex, player.playerName, viewMatrix));
 		}
 

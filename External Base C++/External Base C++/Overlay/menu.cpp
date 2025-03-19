@@ -39,6 +39,7 @@ void __fastcall overlay::renderMenu()
                 ImGui::Checkbox("Fov Toggle", &Config::fovtoggle);
                 ImGui::Checkbox("Fov Follow Recoil", &Config::movingFov);
                 ImGui::SliderFloat("Aim Fov", &Config::fov, 0, 100);
+                ImGui::Checkbox("Aim At Team", &Config::aimTeamCheck);
 
                 ImGui::EndTabItem();
             }
@@ -48,6 +49,7 @@ void __fastcall overlay::renderMenu()
                 ImGui::Checkbox("Box Esp toggle", &Config::boxToggle);
                 ImGui::Checkbox("Name Esp toggle", &Config::nameToggle);
                 ImGui::Checkbox("Health Bar toggle", &Config::healthBarToggle);
+                ImGui::Checkbox("Show Team", &Config::espTeamCheck);
 
                 ImGui::EndTabItem();
             }
