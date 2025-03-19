@@ -56,7 +56,8 @@ void __fastcall overlay::renderMenu()
 
             if (ImGui::BeginTabItem("Misc"))
             {
-                ImGui::Text("Misc settings go here.");
+                ImGui::Checkbox("Grenade Esp toggle", &Config::nadeEsp);
+                ImGui::Checkbox("Item Esp toggle", &Config::droppedItemEsp);
 
                 ImGui::EndTabItem();
             }

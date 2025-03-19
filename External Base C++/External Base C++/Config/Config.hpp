@@ -20,4 +20,7 @@ namespace Config
 	inline bool movingFov = true;
 	inline float fov = 50;
 	inline bool aimTeamCheck = true;
+
+	inline bool nadeEsp = true;
+	inline bool droppedItemEsp = true;
 }

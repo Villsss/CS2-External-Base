@@ -4,7 +4,7 @@ void ItemEsp::RunItemEsp()
 {
 	for (;;)
 	{
-		std::this_thread::sleep_for(std::chrono::nanoseconds(1));
+		std::this_thread::sleep_for(std::chrono::milliseconds(1));
 		uintptr_t client = memory.clientDLL;
 		std::vector<DrawObject_t> vecDrawDataTemp;
 
@@ -39,10 +39,12 @@ void ItemEsp::EachItem(std::vector<DrawObject_t>* vecDrawData, uintptr_t pawn, s
 
 	if (owner != -1)
 	{
-		Draw::AddText(vecDrawData, Globals::WEAPONFont, 10, { screenOrigin.x, screenOrigin.y }, weaponName, ImColor(255, 0, 0), DRAW_TEXT_OUTLINE);
+		if(Config::nadeEsp)
+			Draw::AddText(vecDrawData, Globals::WEAPONFont, 10, { screenOrigin.x, screenOrigin.y }, weaponName, ImColor(255, 0, 0), DRAW_TEXT_OUTLINE);
 	}
 	else
 	{
-		Draw::AddText(vecDrawData, Globals::WEAPONFont, 10, { screenOrigin.x, screenOrigin.y }, weaponName, ImColor(255, 255, 255), DRAW_TEXT_OUTLINE);
+		if(Config::droppedItemEsp)
+			Draw::AddText(vecDrawData, Globals::WEAPONFont, 10, { screenOrigin.x, screenOrigin.y }, weaponName, ImColor(255, 255, 255), DRAW_TEXT_OUTLINE);
 	}
 }
