@@ -50,6 +50,9 @@ void __fastcall overlay::renderMenu()
                 ImGui::Checkbox("Name Esp toggle", &Config::nameToggle);
                 ImGui::Checkbox("Health Bar toggle", &Config::healthBarToggle);
                 ImGui::Checkbox("Show Team", &Config::espTeamCheck);
+                ImGui::Checkbox("Active Weapon Esp", &Config::activeWeaponEsp);
+                ImGui::Checkbox("Util Esp", &Config::utilEsp);
+                ImGui::Checkbox("Distance Esp", &Config::distanceEsp);
 
                 ImGui::EndTabItem();
             }
@@ -58,6 +61,7 @@ void __fastcall overlay::renderMenu()
             {
                 ImGui::Checkbox("Grenade Esp toggle", &Config::nadeEsp);
                 ImGui::Checkbox("Item Esp toggle", &Config::droppedItemEsp);
+                ImGui::SliderFloat("Max Item Distance", &Config::maxitemDistance, 0, 100);
 
                 ImGui::EndTabItem();
             }

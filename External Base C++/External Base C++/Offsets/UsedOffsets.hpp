@@ -37,6 +37,13 @@ namespace Offsets
 		inline std::ptrdiff_t m_iTeamNum = schemas::client_dll::C_BaseEntity::m_iTeamNum;
 		inline std::ptrdiff_t m_vecAbsOrigin = schemas::client_dll::CGameSceneNode::m_vecAbsOrigin;
 		inline std::ptrdiff_t m_hOwnerEntity = schemas::client_dll::C_BaseEntity::m_hOwnerEntity;
+		inline std::ptrdiff_t m_AttributeManager = schemas::client_dll::C_EconEntity::m_AttributeManager;
+		inline std::ptrdiff_t m_Item = schemas::client_dll::C_AttributeContainer::m_Item;
+		inline std::ptrdiff_t m_iItemDefinitionIndex = schemas::client_dll::C_EconItemView::m_iItemDefinitionIndex;
+		inline std::ptrdiff_t m_pWeaponServices = schemas::client_dll::C_BasePlayerPawn::m_pWeaponServices;
+		inline std::ptrdiff_t m_hMyWeapons = schemas::client_dll::CPlayer_WeaponServices::m_hMyWeapons;
+		inline std::ptrdiff_t m_WeaponType = schemas::client_dll::CCSWeaponBaseVData::m_WeaponType;
+		inline std::ptrdiff_t m_szName = schemas::client_dll::CCSWeaponBaseVData::m_szName;
 	}
 
 	namespace buttons 

@@ -16,9 +16,6 @@ void PlayerEsp::RunPlayerEsp()
 		const auto& localPlayerController = memory.Read<uintptr_t>(client + Offsets::dwLocalPlayerController);
 		if (!localPlayerController) return;
 
-		const auto& entityList = memory.Read<uintptr_t>(client + Offsets::dwEntityList);
-		if (!entityList) return;
-
 		view_matrix_t viewMatrix = memory.Read<view_matrix_t>(client + Offsets::dwViewMatrix);
 
 		std::vector<desiredPlayerValues> playerListTemp = List.playerList;
@@ -57,11 +54,21 @@ ImVec4 PlayerEsp::CalcBox(float hPosX, float hPosY, float sPosX, float sPosY)
 
 void PlayerEsp::EachPlayer(std::vector<DrawObject_t>* vecDrawData, uintptr_t pawn, uintptr_t controller, int index, std::string playerName, view_matrix_t matrix)
 {
+	float top = 0;
+	float bottom = 0;
+
 	std::lock_guard<std::mutex> Lock(playerMutex);
+
+	const auto& localPlayerPawn = memory.Read<uintptr_t>(memory.clientDLL + Offsets::dwLocalPlayerPawn);
+	if (!localPlayerPawn) return;
+
+	const auto& entityList = memory.Read<uintptr_t>(memory.clientDLL + Offsets::dwEntityList);
+	if (!entityList) return;
 
 	uintptr_t node = memory.Read<uintptr_t>(pawn + Offsets::client::m_pGameSceneNode);
 	uintptr_t bonearray = memory.Read<uintptr_t>(node + Offsets::client::m_modelState + 0x80);
 
+	Vec3 localPos = memory.Read<Vec3>(localPlayerPawn + Offsets::client::m_vOldOrigin);
 	Vec3 pawnPos = memory.Read<Vec3>(pawn + Offsets::client::m_vOldOrigin);
 	Vec3 headPos = memory.Read<Vec3>(bonearray + 6 * 32);
 
@@ -75,7 +82,8 @@ void PlayerEsp::EachPlayer(std::vector<DrawObject_t>* vecDrawData, uintptr_t paw
 
 	ImVec2 nameSize = Globals::ESPFont->CalcTextSizeA(10.5f, FLT_MAX, 0.0f, playerName.c_str());
 	if (Config::nameToggle) {
-		Draw::AddText(vecDrawData, Globals::ESPFont, 10.5f, { Box.x + (Box.z / 2) - (nameSize.x / 2), Box.y - 1 - nameSize.y }, playerName, ImColor(255, 255, 255), DRAW_TEXT_OUTLINE);
+		top += nameSize.y;
+		Draw::AddText(vecDrawData, Globals::ESPFont, 10.5f, { Box.x + (Box.z / 2) - (nameSize.x / 2), Box.y - top - 1 }, playerName, ImColor(255, 255, 255), DRAW_TEXT_OUTLINE);
 	}
 	
 	if (Config::healthBarToggle) {
@@ -107,5 +115,82 @@ void PlayerEsp::EachPlayer(std::vector<DrawObject_t>* vecDrawData, uintptr_t paw
 
 			Draw::AddLine(vecDrawData, { sBone1.x, sBone1.y }, { sBone2.x, sBone2.y }, ImColor(255, 255, 255, 160));
 		}
+	}
+
+	uintptr_t activeWeaponHandle = memory.Read<uintptr_t>(pawn + Offsets::client::m_pClippingWeapon);
+	int activeWeaponID = memory.Read<int>(activeWeaponHandle + Offsets::client::m_AttributeManager + Offsets::client::m_Item + Offsets::client::m_iItemDefinitionIndex);
+	std::string weaponName = GetWeaponName(activeWeaponID);
+	weaponName = GunIcon(weaponName);
+	ImVec2 wTextSize = Globals::WEAPONFont->CalcTextSizeA(9.f, FLT_MAX, 0.0f, weaponName.c_str());
+
+	if(Config::activeWeaponEsp) {
+		bottom += wTextSize.y + 1;
+		Draw::AddText(vecDrawData, Globals::WEAPONFont, 9.f, { Box.x + (Box.z / 2) - (wTextSize.x / 2), Box.y + Box.w + 1}, weaponName.c_str(), ImColor(255, 255, 255), DRAW_TEXT_OUTLINE);
+	}
+
+	if(Config::utilEsp) {
+		std::vector<std::string> grenadeNames;
+		myWeapon m_hMyWeapons = memory.Read<myWeapon>(memory.Read<uintptr_t>(pawn + Offsets::client::m_pWeaponServices) + Offsets::client::m_hMyWeapons);
+
+		for (int i = 0; i < m_hMyWeapons.size; ++i)
+		{
+			int weaponHandle = memory.Read<int>(m_hMyWeapons.handle + 0x4 * i);
+			if (weaponHandle == -1) continue;
+
+			weaponHandle &= 0x7FFF;
+			auto list = memory.Read<uintptr_t>(entityList + 8 * (weaponHandle >> 9) + 16);
+			auto controller = list + 120 * (weaponHandle & 0x1FF);
+			auto weapon = memory.Read<uintptr_t>(controller);
+			if (!weapon) continue;
+
+			auto subclassID = memory.Read<std::uint64_t>(weapon + Offsets::client::m_nSubclassID);
+			auto nameAddress = memory.Read<std::uint64_t>(subclassID + Offsets::client::m_szName);
+
+			if (!nameAddress) continue;
+
+			char buf[MAX_PATH] = {};
+			memory.ReadRaw(nameAddress, buf, MAX_PATH);
+			std::string weaponName(buf);
+
+			if (weaponName.size() > 7)
+				weaponName.erase(0, 7);
+
+			if (memory.Read<e_weapon_type>(subclassID + Offsets::client::m_WeaponType) == e_weapon_type::grenade) {
+				grenadeNames.push_back(weaponName);
+			}			
+		}
+
+		float spacing = 2.0f;
+		float iconSize = 6.0f;
+		float totalWidth = (grenadeNames.size() * iconSize) + ((grenadeNames.size()) * spacing);
+		float startX = Box.x + (Box.z / 2) - (totalWidth / 2);
+
+		for (const auto& grenadeName : grenadeNames) {
+			std::string name = GunIcon(grenadeName);
+
+			Draw::AddText(
+				vecDrawData,
+				Globals::WEAPONFont,
+				10,
+				{ startX, Box.y + Box.w + bottom },
+				name.c_str(),
+				ImColor(255, 255, 255),
+				DRAW_TEXT_OUTLINE
+			);
+
+			startX += iconSize + spacing;
+		}
+	}
+
+	if(Config::distanceEsp) {
+		int distance = pawnPos.DistanceTo(localPos) / 100;
+		std::string str = std::to_string(distance) + "m";
+		ImVec2 dTextSize = Globals::ESPFont->CalcTextSizeA(10.f, FLT_MAX, 0.0f, str.c_str());
+
+		if (!top)
+			top = 1;
+
+		top += dTextSize.y;
+		Draw::AddText(vecDrawData, Globals::ESPFont, 10.f, { Box.x + (Box.z / 2) - (dTextSize.x / 2), Box.y - top - 1 }, str.c_str(), ImColor(255, 255, 255), DRAW_TEXT_OUTLINE);
 	}
 }

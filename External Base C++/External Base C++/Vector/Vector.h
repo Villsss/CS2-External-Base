@@ -14,6 +14,12 @@ struct C_UTL_VECTOR
 	DWORD64 Data = 0;
 };
 
+class myWeapon {
+public:
+	size_t size;
+	uintptr_t handle;
+};
+
 class Vec2
 {
 public:

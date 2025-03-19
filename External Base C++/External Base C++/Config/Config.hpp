@@ -7,6 +7,7 @@ namespace Config
 	inline bool healthBarToggle = true;
 	inline bool boneEspToggle = true;
 	inline bool espTeamCheck = true;
+	inline bool distanceEsp = true;
 
 	inline bool aimToggle = true;
 	inline bool aimWithKeyToggle = true;
@@ -23,4 +24,8 @@ namespace Config
 
 	inline bool nadeEsp = true;
 	inline bool droppedItemEsp = true;
+	inline float maxitemDistance = true;
+
+	inline bool activeWeaponEsp = true;
+	inline bool utilEsp = true;
 }
