@@ -44,6 +44,7 @@ namespace Offsets
 		inline std::ptrdiff_t m_hMyWeapons = schemas::client_dll::CPlayer_WeaponServices::m_hMyWeapons;
 		inline std::ptrdiff_t m_WeaponType = schemas::client_dll::CCSWeaponBaseVData::m_WeaponType;
 		inline std::ptrdiff_t m_szName = schemas::client_dll::CCSWeaponBaseVData::m_szName;
+		inline std::ptrdiff_t m_iIDEntIndex = schemas::client_dll::C_CSPlayerPawnBase::m_iIDEntIndex;
 	}
 
 	namespace buttons 

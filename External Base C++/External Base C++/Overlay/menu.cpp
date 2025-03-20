@@ -41,6 +41,11 @@ void __fastcall overlay::renderMenu()
                 ImGui::SliderFloat("Aim Fov", &Config::fov, 0, 100);
                 ImGui::Checkbox("Aim At Team", &Config::aimTeamCheck);
 
+                ImGui::Checkbox("Trigger Toggle", &Config::triggerToggle);
+                ImGui::Checkbox("Use After Shot Delay", &Config::useTriggerAfterShotDelay);
+                ImGui::Checkbox("Trigger On Team", &Config::triggerOnTeam);
+                ImGui::SliderInt("Trigger Delay", &Config::triggerDelay, 0, 300);
+
                 ImGui::EndTabItem();
             }
 

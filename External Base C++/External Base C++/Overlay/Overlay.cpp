@@ -123,6 +123,10 @@ void overlay::renderLoop()
 		ItemEsp::RunItemEsp();
 		}).detach();
 
+	std::thread([]() {
+		Triggerbot::RunTriggerbot();
+		}).detach();
+
 	while (state) {
 		if (GetAsyncKeyState(VK_INSERT) & 1) {
 			menutoggle = !menutoggle;

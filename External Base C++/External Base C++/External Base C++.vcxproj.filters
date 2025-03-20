@@ -93,6 +93,9 @@
     <ClInclude Include="Cheats\Weapon.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Cheats\Triggerbot\Triggerbot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Entry\Source.cpp">
@@ -144,6 +147,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Cheats\ItemEsp\ItemEsp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheats\Triggerbot\Triggerbot.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

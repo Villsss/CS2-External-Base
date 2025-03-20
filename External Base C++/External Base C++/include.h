@@ -126,6 +126,7 @@ inline void allocateConsole() {
 #include "Cheats/PlayerEsp/PlayerEsp.h"
 #include "Cheats/Aimbot/Aimbot.h"
 #include "Cheats/ItemEsp/ItemEsp.h"
+#include "Cheats/Triggerbot/Triggerbot.h"
 
 // globals 
 namespace Globals

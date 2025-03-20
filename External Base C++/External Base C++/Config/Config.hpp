@@ -28,4 +28,9 @@ namespace Config
 
 	inline bool activeWeaponEsp = true;
 	inline bool utilEsp = true;
+
+	inline bool triggerToggle = false;
+	inline bool triggerOnTeam = true;
+	inline int triggerDelay = 0; 
+	inline bool useTriggerAfterShotDelay = true;
 }

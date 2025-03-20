@@ -136,6 +136,7 @@
     <ClInclude Include="Cheats\Entry.h" />
     <ClInclude Include="Cheats\ItemEsp\ItemEsp.h" />
     <ClInclude Include="Cheats\PlayerEsp\PlayerEsp.h" />
+    <ClInclude Include="Cheats\Triggerbot\Triggerbot.h" />
     <ClInclude Include="Cheats\Weapon.hpp" />
     <ClInclude Include="Config\Config.hpp" />
     <ClInclude Include="Config\HotKey.hpp" />
@@ -163,6 +164,7 @@
     <ClCompile Include="Cheats\Entry.cpp" />
     <ClCompile Include="Cheats\ItemEsp\ItemEsp.cpp" />
     <ClCompile Include="Cheats\PlayerEsp\PlayerEsp.cpp" />
+    <ClCompile Include="Cheats\Triggerbot\Triggerbot.cpp" />
     <ClCompile Include="Draw\Draw.cpp" />
     <ClCompile Include="EntityList\EntityList.cpp" />
     <ClCompile Include="Entry\Source.cpp" />
