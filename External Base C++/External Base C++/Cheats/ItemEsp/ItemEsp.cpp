@@ -16,7 +16,7 @@ void ItemEsp::RunItemEsp()
 		std::vector<desiredOtherValues> itemListTemp = List.otherList;
 		for (auto& item : itemListTemp)
 		{
-			ItemEsp::EachItem(&vecDrawDataTemp, item.handle, item.ownerID, viewMatrix);
+			ItemEsp::EachItem(&vecDrawDataTemp, item.handle, item.otherName, item.ownerID, viewMatrix);
 		}
 
 		{
@@ -26,7 +26,7 @@ void ItemEsp::RunItemEsp()
 	}
 }
 
-void ItemEsp::EachItem(std::vector<DrawObject_t>* vecDrawData, uintptr_t pawn, int owner, view_matrix_t matrix)
+void ItemEsp::EachItem(std::vector<DrawObject_t>* vecDrawData, uintptr_t pawn, std::string name, int owner, view_matrix_t matrix)
 {
 	const auto& localPlayerPawn = memory.Read<uintptr_t>(memory.clientDLL + Offsets::dwLocalPlayerPawn);
 	if (!localPlayerPawn) return;
@@ -37,12 +37,9 @@ void ItemEsp::EachItem(std::vector<DrawObject_t>* vecDrawData, uintptr_t pawn, i
 	Vec3 origin = memory.Read<Vec3>(gameSceneNode + Offsets::client::m_vecAbsOrigin);
 	Vec3 screenOrigin = origin.worldToScreen(matrix); if (screenOrigin.z < 0.1f) return;
 
-	int itemID = memory.Read<int>(pawn + Offsets::client::m_AttributeManager + Offsets::client::m_Item + Offsets::client::m_iItemDefinitionIndex);
-	std::string weaponName = GetWeaponName(itemID);
-	weaponName = GunIcon(weaponName);
-
 	if (owner != -1)
 	{
+		std::string weaponName = GunIcon(name);
 		if(Config::nadeEsp)
 			Draw::AddText(vecDrawData, Globals::WEAPONFont, 10, { screenOrigin.x, screenOrigin.y }, weaponName, ImColor(255, 0, 0), DRAW_TEXT_OUTLINE);
 	}
@@ -51,6 +48,10 @@ void ItemEsp::EachItem(std::vector<DrawObject_t>* vecDrawData, uintptr_t pawn, i
 		float distance = localOrigin.distanceTo(origin);
 		if (distance / 100 >= Config::maxitemDistance)
 			return;
+
+		int itemID = memory.Read<int>(pawn + Offsets::client::m_AttributeManager + Offsets::client::m_Item + Offsets::client::m_iItemDefinitionIndex);
+		std::string weaponName = GetWeaponName(itemID);
+		weaponName = GunIcon(weaponName);
 
 		if(Config::droppedItemEsp)
 			Draw::AddText(vecDrawData, Globals::WEAPONFont, 10, { screenOrigin.x, screenOrigin.y }, weaponName, ImColor(255, 255, 255), DRAW_TEXT_OUTLINE);

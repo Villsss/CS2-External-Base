@@ -2647,6 +2647,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_hController = 0x133C; // CHandle<CBasePlayerController>
                 constexpr std::ptrdiff_t m_bIsSwappingToPredictableController = 0x1340; // bool
             }
+
             // Parent: None
             // Field count: 6
             //
