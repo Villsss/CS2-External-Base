@@ -50,7 +50,7 @@ void Triggerbot::RunTriggerbot()
 			delay = 400;
 
 		if (isValidEntity || isDeathMatchEntity) {
-			Sleep(3);
+			Sleep(4);
 			if (crossHairEntity != lastCrossHariEntity) {
 				firstShotOnTarget = true;  
 				lastCrossHariEntity = crossHairEntity;  

@@ -143,8 +143,7 @@
               "ViewState": "AgIAAEIAAAAAAAAAAAAnwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-18T19:41:12.68Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -152,9 +151,9 @@
               "Title": "Triggerbot.cpp",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.cpp",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.cpp",
-              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.cpp",
-              "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.cpp",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.cpp*",
+              "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.cpp*",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-19T23:58:14.839Z",
               "EditorCaption": ""
@@ -169,8 +168,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-19T23:57:46.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T23:57:46.364Z"
             },
             {
               "$type": "Document",
@@ -182,8 +180,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\ItemEsp\\ItemEsp.cpp",
               "ViewState": "AgIAACAAAAAAAAAAAAAgwDYAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-19T18:07:05.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T18:07:05.202Z"
             },
             {
               "$type": "Document",
@@ -195,8 +192,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Overlay\\Overlay.cpp",
               "ViewState": "AgIAAGgAAAAAAAAAAAAnwH4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T19:36:41.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T19:36:41.915Z"
             },
             {
               "$type": "Document",
@@ -208,8 +204,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\PlayerEsp\\PlayerEsp.cpp",
               "ViewState": "AgIAAGYAAAAAAAAAAAAnwHUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-18T15:08:51.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T15:08:51.695Z"
             },
             {
               "$type": "Document",
@@ -221,8 +216,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Offsets\\UsedOffsets.hpp",
               "ViewState": "AgIAABgAAAAAAAAAAAAAAC4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-17T20:08:59.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T20:08:59.867Z"
             },
             {
               "$type": "Document",
@@ -234,8 +228,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Config\\Config.hpp",
               "ViewState": "AgIAABIAAAAAAAAAAADwvx8AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-17T22:54:23.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T22:54:23.384Z"
             },
             {
               "$type": "Document",
@@ -247,8 +240,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Overlay\\menu.cpp",
               "ViewState": "AgIAABUAAAAAAAAAAAAAACMAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T20:03:28.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T20:03:28.213Z"
             },
             {
               "$type": "Document",
@@ -260,8 +252,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Offsets\\client_dll.h",
               "ViewState": "AgIAAP0HAAAAAAAAAAAnwBgIAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-17T20:11:41.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T20:11:41.742Z"
             },
             {
               "$type": "Document",
@@ -273,8 +264,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Entry\\Source.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T19:19:19.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T19:19:19.595Z"
             },
             {
               "$type": "Document",
@@ -286,8 +276,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Config\\HotKey.hpp",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-18T23:01:51.945Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T23:01:51.945Z"
             },
             {
               "$type": "Document",
@@ -299,8 +288,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Draw\\Draw.cpp",
               "ViewState": "AgIAADAAAAAAAAAAAAAAADsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-18T14:22:21.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T14:22:21.067Z"
             },
             {
               "$type": "Document",
@@ -312,8 +300,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\Entry.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T20:22:37.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T20:22:37.175Z"
             },
             {
               "$type": "Document",
@@ -325,8 +312,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\Weapon.hpp",
               "ViewState": "AgIAAKUAAAAAAAAAAAAYwLcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-19T18:19:11.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T18:19:11.676Z"
             },
             {
               "$type": "Document",
@@ -338,8 +324,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\EntityList\\EntityList.cpp",
               "ViewState": "AgIAAGwAAAAAAAAAAAAgwIMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-18T01:02:34.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T01:02:34.109Z"
             },
             {
               "$type": "Document",
@@ -351,8 +336,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\ItemEsp\\ItemEsp.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-19T18:06:53.947Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T18:06:53.947Z"
             },
             {
               "$type": "Document",
@@ -364,8 +348,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\include.h",
               "ViewState": "AgIAAG0AAAAAAAAAAAAAAIAAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-17T19:11:38.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T19:11:38.064Z"
             },
             {
               "$type": "Document",
@@ -377,8 +360,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\PlayerEsp\\PlayerEsp.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-18T15:07:22.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T15:07:22.556Z"
             },
             {
               "$type": "Document",
@@ -390,8 +372,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Memory\\Memory.cpp",
               "ViewState": "AgIAAF4AAAAAAAAAAAAmwH4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T20:28:47.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T20:28:47.917Z"
             },
             {
               "$type": "Document",
@@ -403,8 +384,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Vector\\Vector.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-17T21:07:32.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T21:07:32.427Z"
             },
             {
               "$type": "Document",
@@ -416,8 +396,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Draw\\Draw.h",
               "ViewState": "AgIAALoAAAAAAAAAAAAAAM4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-18T14:22:14.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T14:22:14.358Z"
             },
             {
               "$type": "Document",
@@ -429,8 +408,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Offsets\\offsets.h",
               "ViewState": "AgIAABUAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-17T20:11:50.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T20:11:50.292Z"
             },
             {
               "$type": "Document",
@@ -442,8 +420,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\Aimbot\\Aimbot.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-18T19:40:41.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T19:40:41.721Z"
             },
             {
               "$type": "Document",
@@ -455,8 +432,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\EntityList\\EntityList.h",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-18T01:02:25.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T01:02:25.614Z"
             },
             {
               "$type": "Document",
