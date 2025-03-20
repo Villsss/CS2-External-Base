@@ -168,4 +168,17 @@ namespace Globals
 			CloseHandle(pi.hThread);
 		}
 	}
+
+	inline std::filesystem::path GetWorkingPath()
+	{
+		std::filesystem::path fsWorkingPath;
+		if (PWSTR pszPathToDocuments; SUCCEEDED(SHGetKnownFolderPath(FOLDERID_Documents, 0UL, nullptr, &pszPathToDocuments)))
+		{
+			fsWorkingPath = std::filesystem::path(pszPathToDocuments);
+			fsWorkingPath /= "External Base C++";
+			CoTaskMemFree(pszPathToDocuments);
+		}
+
+		return fsWorkingPath;
+	}
 }
