@@ -4,6 +4,8 @@ void __fastcall Run::Cheats()
 {
 	uintptr_t client = memory.clientDLL;
 
+	SpectatorList::DrawSpectatorList();
+
 	std::vector<DrawObject_t> playerEspDataTemp;
 	{
 		std::unique_lock<std::shared_mutex> lock(Draw::PlayerEspMutex);

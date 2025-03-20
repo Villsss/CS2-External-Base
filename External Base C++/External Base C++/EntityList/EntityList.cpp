@@ -38,7 +38,6 @@ void EntityList::ReadEntityList()
 
 			if (playerController == memory.Read<uintptr_t>(client + Offsets::dwLocalPlayerController)) {
 				Globals::LocalPlayerIndex = i;
-				continue;
 			}
 
 			uintptr_t playerPawnHandle = memory.Read<uintptr_t>(playerController + Offsets::client::m_hPawn);

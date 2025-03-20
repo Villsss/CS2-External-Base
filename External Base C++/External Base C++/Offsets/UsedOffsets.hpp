@@ -19,7 +19,7 @@ namespace Offsets
 
 	namespace client 
 	{
-		inline std::ptrdiff_t m_hPawn = schemas::client_dll::CCSPlayerController::m_hPlayerPawn;
+		inline std::ptrdiff_t m_hPawn = schemas::client_dll::CBasePlayerController::m_hPawn;
 		inline std::ptrdiff_t m_vOldOrigin = schemas::client_dll::C_BasePlayerPawn::m_vOldOrigin;
 		inline std::ptrdiff_t m_vecViewOffset = schemas::client_dll::C_BaseModelEntity::m_vecViewOffset;
 		inline std::ptrdiff_t m_modelState = schemas::client_dll::CSkeletonInstance::m_modelState;
@@ -45,6 +45,8 @@ namespace Offsets
 		inline std::ptrdiff_t m_WeaponType = schemas::client_dll::CCSWeaponBaseVData::m_WeaponType;
 		inline std::ptrdiff_t m_szName = schemas::client_dll::CCSWeaponBaseVData::m_szName;
 		inline std::ptrdiff_t m_iIDEntIndex = schemas::client_dll::C_CSPlayerPawnBase::m_iIDEntIndex;
+		inline std::ptrdiff_t m_pObserverServices = schemas::client_dll::C_BasePlayerPawn::m_pObserverServices;
+		inline std::ptrdiff_t m_hObserverTarget = schemas::client_dll::CPlayer_ObserverServices::m_hObserverTarget;
 	}
 
 	namespace buttons 

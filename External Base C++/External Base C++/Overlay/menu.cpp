@@ -68,6 +68,9 @@ void __fastcall overlay::renderMenu()
                 ImGui::Checkbox("Item Esp toggle", &Config::droppedItemEsp);
                 ImGui::SliderFloat("Max Item Distance", &Config::maxitemDistance, 0, 100);
 
+                ImGui::Checkbox("Show Spectator List", &Config::spectatorListToggle);
+                ImGui::Checkbox("Show Only Local Spectators", &Config::onlyLocalSpectators);
+
                 ImGui::EndTabItem();
             }
 

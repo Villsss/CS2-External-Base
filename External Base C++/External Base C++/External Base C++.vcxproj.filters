@@ -96,6 +96,9 @@
     <ClInclude Include="Cheats\Triggerbot\Triggerbot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Cheats\SpectatorList\SpectatorList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Entry\Source.cpp">
@@ -150,6 +153,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Cheats\Triggerbot\Triggerbot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheats\SpectatorList\SpectatorList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

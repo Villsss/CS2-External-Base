@@ -145,6 +145,10 @@ void overlay::renderLoop()
 		Triggerbot::RunTriggerbot();
 		}).detach();
 
+	std::thread([]() {
+		SpectatorList::GetSpectators();
+		}).detach();
+
 	while (state) {
 		if (GetAsyncKeyState(VK_INSERT) & 1) {
 			menutoggle = !menutoggle;

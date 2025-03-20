@@ -33,4 +33,7 @@ namespace Config
 	inline bool triggerOnTeam = true;
 	inline int triggerDelay = 0; 
 	inline bool useTriggerAfterShotDelay = true;
+
+	inline bool spectatorListToggle = true;
+	inline bool onlyLocalSpectators = false;
 }
