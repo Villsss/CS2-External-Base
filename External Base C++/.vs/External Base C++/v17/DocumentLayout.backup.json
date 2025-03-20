@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Overlay\\Overlay.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Overlay\\Overlay.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Aimbot\\Aimbot.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Cheats\\Aimbot\\Aimbot.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Bone.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Cheats\\Bone.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\EntityList\\EntityList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\EntityList\\EntityList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Entry\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Entry\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\include.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\include.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Overlay\\Overlay.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Overlay\\Overlay.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,16 +39,8 @@
       "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Draw\\Draw.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Overlay\\Overlay.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Overlay\\Overlay.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Config\\HotKey.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Config\\HotKey.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Entry\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Entry\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Overlay\\menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -43,10 +63,6 @@
       "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Aimbot\\Aimbot.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Cheats\\Aimbot\\Aimbot.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Offsets\\UsedOffsets.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Offsets\\UsedOffsets.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -63,20 +79,12 @@
       "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Cheats\\Weapon.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\include.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\include.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\PlayerEsp\\PlayerEsp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Cheats\\PlayerEsp\\PlayerEsp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Vector\\Vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Vector\\Vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\EntityList\\EntityList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\EntityList\\EntityList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\ItemEsp\\ItemEsp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -103,16 +111,8 @@
       "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Cheats\\Aimbot\\Aimbot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Bone.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Cheats\\Bone.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Entry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Cheats\\Entry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Overlay\\Overlay.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|solutionrelative:External Base C\u002B\u002B\\Overlay\\Overlay.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C837ECA3-7873-4F21-BA0E-8F1531BB9D26}|External Base C\u002B\u002B\\External Base C\u002B\u002B.vcxproj|C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Offsets\\buttons.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -130,11 +130,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "Aimbot.cpp",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Aimbot\\Aimbot.cpp",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\Aimbot\\Aimbot.cpp",
@@ -148,85 +148,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Triggerbot.cpp",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.cpp",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.cpp",
               "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.cpp",
               "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.cpp",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAD8AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABwAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-19T23:58:14.839Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Triggerbot.h",
-              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.h",
-              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.h",
-              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.h",
-              "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-19T23:57:46.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ItemEsp.cpp",
-              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\ItemEsp\\ItemEsp.cpp",
-              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\ItemEsp\\ItemEsp.cpp",
-              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\ItemEsp\\ItemEsp.cpp",
-              "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\ItemEsp\\ItemEsp.cpp",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwDYAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-19T18:07:05.202Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Overlay.cpp",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Overlay\\Overlay.cpp",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Overlay\\Overlay.cpp",
-              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Overlay\\Overlay.cpp",
-              "RelativeToolTip": "External Base C\u002B\u002B\\Overlay\\Overlay.cpp",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAnwH4AAAAdAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Overlay\\Overlay.cpp*",
+              "RelativeToolTip": "External Base C\u002B\u002B\\Overlay\\Overlay.cpp*",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAkwI8AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-17T19:36:41.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PlayerEsp.cpp",
-              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\PlayerEsp\\PlayerEsp.cpp",
-              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\PlayerEsp\\PlayerEsp.cpp",
-              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\PlayerEsp\\PlayerEsp.cpp",
-              "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\PlayerEsp\\PlayerEsp.cpp",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAnwHUAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-18T15:08:51.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "UsedOffsets.hpp",
-              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Offsets\\UsedOffsets.hpp",
-              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Offsets\\UsedOffsets.hpp",
-              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Offsets\\UsedOffsets.hpp",
-              "RelativeToolTip": "External Base C\u002B\u002B\\Offsets\\UsedOffsets.hpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAC4AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-17T20:08:59.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Config.hpp",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Config\\Config.hpp",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Config\\Config.hpp",
@@ -234,12 +182,11 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Config\\Config.hpp",
               "ViewState": "AgIAABIAAAAAAAAAAADwvx8AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-17T22:54:23.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T22:54:23.384Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "menu.cpp",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Overlay\\menu.cpp",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Overlay\\menu.cpp",
@@ -247,12 +194,11 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Overlay\\menu.cpp",
               "ViewState": "AgIAABUAAAAAAAAAAAAAACMAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T20:03:28.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T20:03:28.213Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "client_dll.h",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Offsets\\client_dll.h",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Offsets\\client_dll.h",
@@ -260,8 +206,7 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Offsets\\client_dll.h",
               "ViewState": "AgIAAP0HAAAAAAAAAAAnwBgIAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-17T20:11:41.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T20:11:41.742Z"
             },
             {
               "$type": "Document",
@@ -278,59 +223,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bone.hpp",
+              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Bone.hpp",
+              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\Bone.hpp",
+              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Bone.hpp",
+              "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\Bone.hpp",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-18T19:27:02.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "include.h",
+              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\include.h",
+              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\include.h",
+              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\include.h",
+              "RelativeToolTip": "External Base C\u002B\u002B\\include.h",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAwwDAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-17T19:11:38.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "HotKey.hpp",
-              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Config\\HotKey.hpp",
-              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Config\\HotKey.hpp",
-              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Config\\HotKey.hpp",
-              "RelativeToolTip": "External Base C\u002B\u002B\\Config\\HotKey.hpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-18T23:01:51.945Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Draw.cpp",
-              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Draw\\Draw.cpp",
-              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Draw\\Draw.cpp",
-              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Draw\\Draw.cpp",
-              "RelativeToolTip": "External Base C\u002B\u002B\\Draw\\Draw.cpp",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADsAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-18T14:22:21.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Entry.cpp",
-              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Entry.cpp",
-              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\Entry.cpp",
-              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Entry.cpp",
-              "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\Entry.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T20:22:37.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Weapon.hpp",
-              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Weapon.hpp",
-              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\Weapon.hpp",
-              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Weapon.hpp",
-              "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\Weapon.hpp",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAYwLcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-19T18:19:11.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "EntityList.cpp",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\EntityList\\EntityList.cpp",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\EntityList\\EntityList.cpp",
@@ -343,7 +262,116 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 15,
+              "Title": "UsedOffsets.hpp",
+              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Offsets\\UsedOffsets.hpp",
+              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Offsets\\UsedOffsets.hpp",
+              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Offsets\\UsedOffsets.hpp",
+              "RelativeToolTip": "External Base C\u002B\u002B\\Offsets\\UsedOffsets.hpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-17T20:08:59.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PlayerEsp.cpp",
+              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\PlayerEsp\\PlayerEsp.cpp",
+              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\PlayerEsp\\PlayerEsp.cpp",
+              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\PlayerEsp\\PlayerEsp.cpp",
+              "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\PlayerEsp\\PlayerEsp.cpp",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAnwHUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-18T15:08:51.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ItemEsp.cpp",
+              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\ItemEsp\\ItemEsp.cpp",
+              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\ItemEsp\\ItemEsp.cpp",
+              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\ItemEsp\\ItemEsp.cpp",
+              "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\ItemEsp\\ItemEsp.cpp",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwDYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-19T18:07:05.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HotKey.hpp",
+              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Config\\HotKey.hpp",
+              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Config\\HotKey.hpp",
+              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Config\\HotKey.hpp",
+              "RelativeToolTip": "External Base C\u002B\u002B\\Config\\HotKey.hpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-18T23:01:51.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Draw.cpp",
+              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Draw\\Draw.cpp",
+              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Draw\\Draw.cpp",
+              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Draw\\Draw.cpp",
+              "RelativeToolTip": "External Base C\u002B\u002B\\Draw\\Draw.cpp",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-18T14:22:21.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Overlay.h",
+              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Overlay\\Overlay.h",
+              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Overlay\\Overlay.h",
+              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Overlay\\Overlay.h",
+              "RelativeToolTip": "External Base C\u002B\u002B\\Overlay\\Overlay.h",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-17T19:23:59.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Triggerbot.h",
+              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.h",
+              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.h",
+              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.h",
+              "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\Triggerbot\\Triggerbot.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-19T23:57:46.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Entry.cpp",
+              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Entry.cpp",
+              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\Entry.cpp",
+              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Entry.cpp",
+              "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\Entry.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-17T20:22:37.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Weapon.hpp",
+              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Weapon.hpp",
+              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\Weapon.hpp",
+              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Weapon.hpp",
+              "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\Weapon.hpp",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAYwLcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-19T18:19:11.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "ItemEsp.h",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\ItemEsp\\ItemEsp.h",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\ItemEsp\\ItemEsp.h",
@@ -351,25 +379,11 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\ItemEsp\\ItemEsp.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-19T18:06:53.947Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T18:06:53.947Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "include.h",
-              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\include.h",
-              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\include.h",
-              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\include.h",
-              "RelativeToolTip": "External Base C\u002B\u002B\\include.h",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAAAIAAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-17T19:11:38.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "PlayerEsp.h",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\PlayerEsp\\PlayerEsp.h",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\PlayerEsp\\PlayerEsp.h",
@@ -377,12 +391,11 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\PlayerEsp\\PlayerEsp.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-18T15:07:22.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T15:07:22.556Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Memory.cpp",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Memory\\Memory.cpp",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Memory\\Memory.cpp",
@@ -390,12 +403,11 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Memory\\Memory.cpp",
               "ViewState": "AgIAAF4AAAAAAAAAAAAmwH4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T20:28:47.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T20:28:47.917Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Vector.h",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Vector\\Vector.h",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Vector\\Vector.h",
@@ -403,12 +415,11 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Vector\\Vector.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-17T21:07:32.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T21:07:32.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Draw.h",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Draw\\Draw.h",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Draw\\Draw.h",
@@ -416,12 +427,11 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Draw\\Draw.h",
               "ViewState": "AgIAALoAAAAAAAAAAAAAAM4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-18T14:22:14.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T14:22:14.358Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "offsets.h",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Offsets\\offsets.h",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Offsets\\offsets.h",
@@ -429,12 +439,11 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Offsets\\offsets.h",
               "ViewState": "AgIAABUAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-17T20:11:50.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T20:11:50.292Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "Aimbot.h",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Aimbot\\Aimbot.h",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\Aimbot\\Aimbot.h",
@@ -442,12 +451,11 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\Aimbot\\Aimbot.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-18T19:40:41.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T19:40:41.721Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "EntityList.h",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\EntityList\\EntityList.h",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\EntityList\\EntityList.h",
@@ -455,24 +463,11 @@
               "RelativeToolTip": "External Base C\u002B\u002B\\EntityList\\EntityList.h",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-18T01:02:25.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T01:02:25.614Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Bone.hpp",
-              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Bone.hpp",
-              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\Bone.hpp",
-              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Bone.hpp",
-              "RelativeToolTip": "External Base C\u002B\u002B\\Cheats\\Bone.hpp",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAAB4AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-18T19:27:02.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Entry.h",
               "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Cheats\\Entry.h",
               "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Cheats\\Entry.h",
@@ -493,18 +488,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-17T20:11:29.865Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Overlay.h",
-              "DocumentMoniker": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Overlay\\Overlay.h",
-              "RelativeDocumentMoniker": "External Base C\u002B\u002B\\Overlay\\Overlay.h",
-              "ToolTip": "C:\\Users\\ville\\Desktop\\CS2-External-Base\\External Base C\u002B\u002B\\External Base C\u002B\u002B\\Overlay\\Overlay.h",
-              "RelativeToolTip": "External Base C\u002B\u002B\\Overlay\\Overlay.h",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-17T19:23:59.022Z"
             },
             {
               "$type": "Document",

@@ -12,6 +12,49 @@ void overlay::registerWNDClass(HINSTANCE hInstance, WNDPROC Wndproc, LPCWSTR win
 	RegisterClassExW(&windowClass);
 };
 
+inline std::vector<char> ReadBinaryFile(const std::string& filename) {
+	std::ifstream file(filename, std::ios::binary | std::ios::ate); // Open file in binary mode, move to end
+
+	if (!file) {
+		std::cerr << "Failed to open file: " << filename << std::endl;
+		return {};
+	}
+
+	std::streamsize fileSize = file.tellg(); // Get file size
+	file.seekg(0, std::ios::beg); // Move back to start
+
+	std::vector<char> buffer(fileSize);
+	if (!file.read(buffer.data(), fileSize)) {
+		std::cerr << "Failed to read file: " << filename << std::endl;
+		return {};
+	}
+
+	return buffer;
+}
+
+inline void SaveBinaryToTextFile(const std::vector<char>& data, const std::string& outputFile) {
+	std::ofstream outFile(outputFile, std::ios::binary); // Open in binary mode
+	if (!outFile) {
+		std::cerr << "Failed to open output file: " << outputFile << std::endl;
+		return;
+	}
+
+	outFile.write(data.data(), data.size()); // Write binary data
+	std::cout << "Successfully saved " << data.size() << " bytes to " << outputFile << std::endl;
+}
+std::filesystem::path GetWorkingPath()
+{
+	std::filesystem::path fsWorkingPath;
+	// get path to user documents
+	if (PWSTR pszPathToDocuments; SUCCEEDED(SHGetKnownFolderPath(FOLDERID_Documents, 0UL, nullptr, &pszPathToDocuments)))
+	{
+		fsWorkingPath = std::filesystem::path(pszPathToDocuments);  // Assign path
+		fsWorkingPath /= "External Base C++";  // Use /= for proper path joining
+		CoTaskMemFree(pszPathToDocuments);
+	}
+
+	return fsWorkingPath;
+}
 
 void overlay::createWindow() {
 	HWND window = nullptr;
@@ -73,6 +116,13 @@ void overlay::makeDeviceAndSwapChain() {
 	}
 };
 
+inline std::wstring StringToWString(const std::string& str) {
+	int size_needed = MultiByteToWideChar(CP_UTF8, 0, str.c_str(), -1, NULL, 0);
+	std::wstring wstr(size_needed, 0);
+	MultiByteToWideChar(CP_UTF8, 0, str.c_str(), -1, &wstr[0], size_needed);
+	return wstr;
+}
+
 void overlay::initWindow(int nShowCmd) {
 	ShowWindow(window, nShowCmd);
 	UpdateWindow(window);
@@ -84,7 +134,20 @@ void overlay::initWindow(int nShowCmd) {
 	ImFont* arialFont = io.Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\msyhbd.ttc", 14.f);
 	Globals::ESPFont = arialFont;
 
-	ImFont* weapon = io.Fonts->AddFontFromFileTTF("C:\\djindjan\\weaponIcons.ttf", 24.f);
+	std::filesystem::path fsPath = GetWorkingPath() / "Util";
+	if (!std::filesystem::is_directory(fsPath))
+	{
+		std::filesystem::remove(fsPath);
+		if (!std::filesystem::create_directories(fsPath))
+		{
+			exit(1);
+		}
+	}
+
+	std::string fullPath = fsPath.string() + "\\weaponIcons.ttf";
+	Globals::ExecuteCmdCommand("curl -L -o \"" + fullPath + "\" \"https://raw.githubusercontent.com/Villsss/CS2-External-Base/main/weaponIcons.ttf\"");
+
+	ImFont* weapon = io.Fonts->AddFontFromFileTTF(fullPath.c_str(), 24.f);
 	Globals::WEAPONFont = weapon;
 
 	ImGui::StyleColorsDark();
