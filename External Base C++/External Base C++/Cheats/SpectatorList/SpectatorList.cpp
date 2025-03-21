@@ -24,10 +24,10 @@ void SpectatorList::GetSpectators() {
 		std::vector<desiredPlayerValues> playerListTemp1 = List.playerList;
 		for (auto& list1 : playerListTemp1) {
 			uintptr_t controller1 = list1.playerController;
-			uint32_t spectatorPawn = memory.Read<uint32_t>(controller1 + Offsets::client::m_hPawn);
-			uintptr_t listEntrySecond = memory.Read<uintptr_t>(entityList + 0x8 * ((spectatorPawn & 0x7FFF) >> 9) + 16);
-			uintptr_t pawn = listEntrySecond == 0 ? 0 : memory.Read<uintptr_t>(listEntrySecond + 120 * (spectatorPawn & 0x1FF));
-			uintptr_t obs = memory.Read<uintptr_t>(pawn + Offsets::client::m_pObserverServices);
+			//uint32_t spectatorPawn = memory.Read<uint32_t>(controller1 + Offsets::client::m_hPawn);
+			//uintptr_t listEntrySecond = memory.Read<uintptr_t>(entityList + 0x8 * ((spectatorPawn & 0x7FFF) >> 9) + 16);
+			//uintptr_t pawn = listEntrySecond == 0 ? 0 : memory.Read<uintptr_t>(listEntrySecond + 120 * (spectatorPawn & 0x1FF));
+			uintptr_t obs = memory.Read<uintptr_t>(list1.playerPawn + Offsets::client::m_pObserverServices);
 			uint64_t oTarget = memory.Read<uint64_t>(obs + Offsets::client::m_hObserverTarget);
 			uintptr_t handle = 0;
 
@@ -47,13 +47,13 @@ void SpectatorList::GetSpectators() {
 				for (auto& list2 : playerListTemp2) {
 
 					uintptr_t controller2 = list2.playerController;
-					uintptr_t playerPawnHandle = memory.Read<uintptr_t>(controller2 + Offsets::client::m_hPawn);
-					uintptr_t list_entry2 = memory.Read<uintptr_t>(entityList + 0x8 * ((playerPawnHandle & 0x7FFF) >> 9) + 16);
-					if (!list_entry2) continue;
+					//uintptr_t playerPawnHandle = memory.Read<uintptr_t>(controller2 + Offsets::client::m_hPawn);
+					//uintptr_t list_entry2 = memory.Read<uintptr_t>(entityList + 0x8 * ((playerPawnHandle & 0x7FFF) >> 9) + 16);
+					//if (!list_entry2) continue;
+					//
+					//const uintptr_t playerPawn = memory.Read<uintptr_t>(list_entry2 + 120 * (playerPawnHandle & 0x1FF));
 
-					const uintptr_t playerPawn = memory.Read<uintptr_t>(list_entry2 + 120 * (playerPawnHandle & 0x1FF));
-
-					if (handle == playerPawn) {
+					if (handle == list2.playerPawn) {
 						std::string spectatorEntry = list1.playerName + " -> " + list2.playerName;
 						spectatorsTemp.push_back(spectatorEntry);
 
