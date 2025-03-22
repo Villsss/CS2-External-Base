@@ -1,5 +1,6 @@
 #pragma once
 #define WIN32_LEAN_AND_MEAN
+#define _CRT_SECURE_NO_WARNINGS
 #pragma warning (disable : 6001 )
 #pragma warning (disable : 4244 )
 
@@ -54,6 +55,9 @@
 #include "External/ImGui/imgui_impl_win32.h"
 #include "External/ImGui/imgui_internal.h"
 
+// logger
+#include "Logger/Logger.h"
+
 // memory
 #include "Memory/Memory.h"
 
@@ -98,10 +102,10 @@ inline void allocateConsole() {
 		freopen_s(&fp, "CONOUT$", "w", stderr);
 		freopen_s(&fp, "CONIN$", "r", stdin);
 
-		std::cout << "Console allocated successfully!" << std::endl;
+		LOG_INFO("Console allocated successfully!");
 	}
 	else {
-		std::cerr << "Failed to allocate console." << std::endl;
+		LOG_ERROR("Failed to allocate console.");
 	}
 }
 
@@ -129,6 +133,7 @@ inline void allocateConsole() {
 #include "Cheats/ItemEsp/ItemEsp.h"
 #include "Cheats/Triggerbot/Triggerbot.h"
 #include "Cheats/SpectatorList/SpectatorList.h"
+#include "Cheats/BombInfo/BombInfo.h"
 
 // globals 
 namespace Globals

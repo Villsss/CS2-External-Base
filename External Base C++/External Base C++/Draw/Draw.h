@@ -202,6 +202,7 @@ namespace Draw
 	inline std::shared_mutex AimbotMutex = { };
 	inline std::shared_mutex ItemMutex = { };
 	inline std::shared_mutex SpectatorMutex = { };
+	inline std::shared_mutex BombMutex = { };
 
 	inline std::vector<DrawObject_t> playerEspData;
 	inline std::vector<DrawObject_t> aimbotData;

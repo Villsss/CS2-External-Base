@@ -1,0 +1,25 @@
+[2025-03-21 17:03:10] [INFO] Console allocated successfully!
+[2025-03-21 17:03:10] [INFO] Registered WND Class
+[2025-03-21 17:03:10] [INFO] Window -> 000000000004090C
+[2025-03-21 17:03:10] [INFO] Extended Frame Into Client Area
+[2025-03-21 17:03:10] [INFO] Found Framerate -> 240
+[2025-03-21 17:03:10] [INFO] Created Device And Swap Chain
+[2025-03-21 17:03:10] [INFO] backBuffer -> 0000023AEDD81B38
+[2025-03-21 17:03:10] [INFO] nShowCmd -> 1
+[2025-03-21 17:03:10] [INFO] Globals::ESPFont -> 0000023AEDE29DD0
+[2025-03-21 17:03:10] [INFO] Working Path -> C:\Users\ville\Documents\External Base C++\
+[2025-03-21 17:03:11] [INFO] Globals::WEAPONFont -> 0000023AEDE2AA50
+[2025-03-21 17:03:11] [INFO] Called ImGui_ImplWin32_Init
+[2025-03-21 17:03:11] [INFO] Called ImGui_ImplDX11_Init
+[2025-03-21 17:03:11] [INFO] processId -> 31628
+[2025-03-21 17:03:11] [INFO] processHandle -> 00000000000005A8
+[2025-03-21 17:03:11] [INFO] client.dll -> 140713051422720
+[2025-03-21 17:03:11] [INFO] engine2.dll -> 140714793041920
+[2025-03-21 17:03:11] [INFO] dwBuildNumber -> 14072
+[2025-03-21 17:03:11] [INFO] dwBuildNumber = Current Cheat Version
+[2025-03-21 17:03:11] [INFO] Started Entity Loop
+[2025-03-21 17:03:11] [INFO] Started Aimbot Loop
+[2025-03-21 17:03:11] [INFO] Started PlayerEsp Loop
+[2025-03-21 17:03:11] [INFO] Started ItemEsp Loop
+[2025-03-21 17:03:11] [INFO] Started Trigger Loop
+[2025-03-21 17:03:11] [INFO] Started Spectator Loop

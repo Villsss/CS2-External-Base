@@ -11,10 +11,10 @@ void PlayerEsp::RunPlayerEsp()
 		std::vector<std::thread> playerThreads;
 
 		const auto& localPlayerPawn = memory.Read<uintptr_t>(client + Offsets::dwLocalPlayerPawn);
-		if (!localPlayerPawn) return;
+		if (!localPlayerPawn) continue;
 
 		const auto& localPlayerController = memory.Read<uintptr_t>(client + Offsets::dwLocalPlayerController);
-		if (!localPlayerController) return;
+		if (!localPlayerController) continue;
 
 		view_matrix_t viewMatrix = memory.Read<view_matrix_t>(client + Offsets::dwViewMatrix);
 

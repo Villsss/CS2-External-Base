@@ -71,6 +71,10 @@ void __fastcall overlay::renderMenu()
                 ImGui::Checkbox("Show Spectator List", &Config::spectatorListToggle);
                 ImGui::Checkbox("Show Only Local Spectators", &Config::onlyLocalSpectators);
 
+                ImGui::Checkbox("Bomb Ui Toggle", &Config::showBombUi);
+                ImGui::Checkbox("Show Bomb Ui Only When Planted", &Config::showBombUiWhenPlantedOnly);
+                ImGui::Checkbox("Bomb Esp Toggle", &Config::bombEsp);
+
                 ImGui::EndTabItem();
             }
 

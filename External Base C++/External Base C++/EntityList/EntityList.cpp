@@ -52,6 +52,10 @@ void EntityList::ReadEntityList()
 			std::string playerName = memory.ReadStr<32>(memory.Read<uintptr_t>(playerController + Offsets::client::m_sSanitizedPlayerName));
 			if (playerName.empty()) continue;
 
+            Vec3 playerOrigin = memory.Read<Vec3>(playerPawn + Offsets::client::m_vOldOrigin);
+
+            if (playerOrigin.IsZero()) continue;
+
 			desiredPlayerValues player;
 			player.playerController = playerController;
 			player.playerPawn = playerPawn;
@@ -80,6 +84,8 @@ void EntityList::ReadEntityList()
 
             uintptr_t gameSceneNode = memory.Read<uintptr_t>(grenadeHandle + Offsets::client::m_pGameSceneNode);
             Vec3 origin = memory.Read<Vec3>(gameSceneNode + Offsets::client::m_vecAbsOrigin);
+
+            if (origin.IsZero()) continue;
 
             if (owner != -1)
             {

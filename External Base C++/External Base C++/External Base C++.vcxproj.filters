@@ -99,6 +99,12 @@
     <ClInclude Include="Cheats\SpectatorList\SpectatorList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Logger\Logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheats\BombInfo\BombInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Entry\Source.cpp">
@@ -156,6 +162,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Cheats\SpectatorList\SpectatorList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger\Logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheats\BombInfo\BombInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

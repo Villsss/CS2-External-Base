@@ -6,6 +6,8 @@ void __fastcall Run::Cheats()
 
 	SpectatorList::DrawSpectatorList();
 
+	BombInfo::DrawBombInfo();
+
 	std::vector<DrawObject_t> playerEspDataTemp;
 	{
 		std::unique_lock<std::shared_mutex> lock(Draw::PlayerEspMutex);

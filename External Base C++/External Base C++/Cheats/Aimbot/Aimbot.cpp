@@ -89,14 +89,13 @@ void Aimbot::RunAimbot()
 		uintptr_t bonearray = memory.Read<uintptr_t>(node + Offsets::client::m_modelState + 0x80);
 
 		DesiredAimPos = memory.Read<Vec3>(bonearray + 6 * 32);
-
+		if (DesiredAimPos.IsZero()) continue;
 		Vec3 localOrigin = memory.Read<Vec3>(localPlayerPawn + Offsets::client::m_vOldOrigin);
 		C_UTL_VECTOR aimPunchC = memory.Read<C_UTL_VECTOR>(localPlayerPawn + Offsets::client::m_aimPunchCache);
 		Vec3 aimPunchAngle = memory.Read<Vec3>((aimPunchC.Data + (aimPunchC.Count - 1) * sizeof(Vec3)));
 		Vec3 LocalAngles = memory.Read<Vec3>(localPlayerPawn + Offsets::client::v_angle);
 		Vec3 LocalEyePos = localOrigin + memory.Read<Vec3>(localPlayerPawn + Offsets::client::m_vecViewOffset);
 		Vec3 FovAngle = CalculateAngle(LocalEyePos, DesiredAimPos, LocalAngles);
-
 		Vec3 punch = memory.Read<Vec3>(localPlayerPawn + Offsets::client::m_aimPunchAngle);
 
 		Vec3 rcsFov = LocalAngles;

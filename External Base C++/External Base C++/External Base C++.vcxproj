@@ -132,6 +132,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Cheats\Aimbot\Aimbot.h" />
+    <ClInclude Include="Cheats\BombInfo\BombInfo.h" />
     <ClInclude Include="Cheats\Bone.hpp" />
     <ClInclude Include="Cheats\Entry.h" />
     <ClInclude Include="Cheats\ItemEsp\ItemEsp.h" />
@@ -152,6 +153,7 @@
     <ClInclude Include="External\ImGui\imstb_textedit.h" />
     <ClInclude Include="External\ImGui\imstb_truetype.h" />
     <ClInclude Include="include.h" />
+    <ClInclude Include="Logger\Logger.h" />
     <ClInclude Include="Memory\Memory.h" />
     <ClInclude Include="Offsets\buttons.h" />
     <ClInclude Include="Offsets\client_dll.h" />
@@ -162,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Cheats\Aimbot\Aimbot.cpp" />
+    <ClCompile Include="Cheats\BombInfo\BombInfo.cpp" />
     <ClCompile Include="Cheats\Entry.cpp" />
     <ClCompile Include="Cheats\ItemEsp\ItemEsp.cpp" />
     <ClCompile Include="Cheats\PlayerEsp\PlayerEsp.cpp" />
@@ -177,6 +180,7 @@
     <ClCompile Include="External\ImGui\imgui_impl_win32.cpp" />
     <ClCompile Include="External\ImGui\imgui_tables.cpp" />
     <ClCompile Include="External\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Logger\Logger.cpp" />
     <ClCompile Include="Memory\Memory.cpp" />
     <ClCompile Include="Overlay\menu.cpp" />
     <ClCompile Include="Overlay\Overlay.cpp" />

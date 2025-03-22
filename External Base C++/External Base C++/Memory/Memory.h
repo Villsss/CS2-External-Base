@@ -64,7 +64,22 @@ public:
 			if (process_name.compare(processentry.szExeFile) == NULL)
 			{
 				this->processId = processentry.th32ProcessID;
+
+				if (this->processId) {
+					LOG_INFO("processId -> ", this->processId);
+				}
+				else {
+					LOG_ERROR("Could Not Get processId");
+				}
+
 				this->processHandle = HijackExistingHandle(this->processId);
+
+				if (this->processHandle) {
+					LOG_INFO("processHandle -> ", this->processHandle);
+				}
+				else {
+					LOG_ERROR("Could Not Get processHandle");
+				}
 			}
 		}
 	}
@@ -89,6 +104,13 @@ public:
 
 		if (snapShot)
 			::CloseHandle(snapShot);
+
+		if (result) {
+			LOG_INFO(std::string(moduleName) + " -> ", result);
+		}
+		else {
+			LOG_ERROR("Failed To Get ", moduleName);
+		}
 
 		return result;
 	}

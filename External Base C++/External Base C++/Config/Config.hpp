@@ -36,4 +36,8 @@ namespace Config
 
 	inline bool spectatorListToggle = true;
 	inline bool onlyLocalSpectators = false;
+
+	inline bool showBombUi = true;
+	inline bool showBombUiWhenPlantedOnly = false;
+	inline bool bombEsp = true;
 }

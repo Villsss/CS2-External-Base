@@ -16,6 +16,9 @@ namespace Offsets
 	inline std::ptrdiff_t dwGameEntitySystem_highestEntityIndex = offsets::client_dll::dwGameEntitySystem_highestEntityIndex;
 	inline std::ptrdiff_t dwSensitivity = offsets::client_dll::dwSensitivity;
 	inline std::ptrdiff_t dwSensitivity_sensitivity = offsets::client_dll::dwSensitivity_sensitivity;
+	inline std::ptrdiff_t dwPlantedC4 = offsets::client_dll::dwPlantedC4;
+
+	inline std::ptrdiff_t dwBuildNumber = offsets::engine2_dll::dwBuildNumber;
 
 	namespace client 
 	{
@@ -47,6 +50,12 @@ namespace Offsets
 		inline std::ptrdiff_t m_iIDEntIndex = schemas::client_dll::C_CSPlayerPawnBase::m_iIDEntIndex;
 		inline std::ptrdiff_t m_pObserverServices = schemas::client_dll::C_BasePlayerPawn::m_pObserverServices;
 		inline std::ptrdiff_t m_hObserverTarget = schemas::client_dll::CPlayer_ObserverServices::m_hObserverTarget;
+		inline std::ptrdiff_t m_nBombSite = schemas::client_dll::C_PlantedC4::m_nBombSite;
+		inline std::ptrdiff_t m_bBeingDefused = schemas::client_dll::C_PlantedC4::m_bBeingDefused;
+		inline std::ptrdiff_t m_flDefuseLength = schemas::client_dll::C_PlantedC4::m_flDefuseLength;
+		inline std::ptrdiff_t m_bBombTicking = schemas::client_dll::C_PlantedC4::m_bBombTicking;
+		inline std::ptrdiff_t m_bHasExploded = schemas::client_dll::C_PlantedC4::m_bHasExploded;
+		inline std::ptrdiff_t m_bBombDefused = schemas::client_dll::C_PlantedC4::m_bBombDefused;
 	}
 
 	namespace buttons 
