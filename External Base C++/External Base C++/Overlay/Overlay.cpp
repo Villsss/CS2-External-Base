@@ -212,10 +212,15 @@ void overlay::renderLoop()
 		LOG_INFO("Started Spectator Loop");
 		SpectatorList::GetSpectators();
 		}).detach();
-
+	
 	std::thread([]() {
 		LOG_INFO("Started BombInfo Loop");
 		BombInfo::GetBombInfo();
+		}).detach();
+
+	std::thread([]() {
+		LOG_INFO("Started RadarEsp Loop");
+		RadarEsp::GetRadarPoints();
 		}).detach();
 
 	while (state) {

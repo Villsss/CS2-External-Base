@@ -105,6 +105,9 @@
     <ClInclude Include="Cheats\BombInfo\BombInfo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Cheats\RadarEsp\RadarEsp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Entry\Source.cpp">
@@ -168,6 +171,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Cheats\BombInfo\BombInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheats\RadarEsp\RadarEsp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

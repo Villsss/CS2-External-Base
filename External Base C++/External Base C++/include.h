@@ -134,6 +134,7 @@ inline void allocateConsole() {
 #include "Cheats/Triggerbot/Triggerbot.h"
 #include "Cheats/SpectatorList/SpectatorList.h"
 #include "Cheats/BombInfo/BombInfo.h"
+#include "Cheats/RadarEsp/RadarEsp.h"
 
 // globals 
 namespace Globals

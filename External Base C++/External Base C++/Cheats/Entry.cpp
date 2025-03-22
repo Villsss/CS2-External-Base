@@ -8,6 +8,8 @@ void __fastcall Run::Cheats()
 
 	BombInfo::DrawBombInfo();
 
+	RadarEsp::DrawRadar();
+
 	std::vector<DrawObject_t> playerEspDataTemp;
 	{
 		std::unique_lock<std::shared_mutex> lock(Draw::PlayerEspMutex);

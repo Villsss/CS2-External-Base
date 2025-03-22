@@ -56,6 +56,7 @@ namespace Offsets
 		inline std::ptrdiff_t m_bBombTicking = schemas::client_dll::C_PlantedC4::m_bBombTicking;
 		inline std::ptrdiff_t m_bHasExploded = schemas::client_dll::C_PlantedC4::m_bHasExploded;
 		inline std::ptrdiff_t m_bBombDefused = schemas::client_dll::C_PlantedC4::m_bBombDefused;
+		inline std::ptrdiff_t m_angEyeAngles = schemas::client_dll::C_CSPlayerPawnBase::m_angEyeAngles;
 	}
 
 	namespace buttons 

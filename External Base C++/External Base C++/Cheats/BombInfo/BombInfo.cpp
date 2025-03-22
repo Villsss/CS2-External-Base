@@ -115,7 +115,7 @@ void BombInfo::DrawBombInfo()
         defuseTimer = max(0.0f, defuseTimer);
     }
     else {
-        defuseTimer = tempdefuseTime;
+        defuseTimer = 0;
     }
 
     if (Config::showBombUi && (Config::showBombUiWhenPlantedOnly ? tempplanted : true)) {
@@ -151,7 +151,7 @@ void BombInfo::DrawBombInfo()
             wdrawList->AddLine(p1, p2, progressColor, 4.0f);
         }
 
-        if (tempisDefusing) {
+        if (tempisDefusing && tempplanted) {
             for (int i = 0; i < segments * defusePercentage; i++) {
                 float angleStart = i * angleStep - IM_PI / 2;
                 float angleEnd = (i + 1) * angleStep - IM_PI / 2;
